@@ -1,0 +1,231 @@
+[
+ {
+  "name": "menu visible",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "difficulty E/N/H status lines",
+  "ok": true,
+  "detail": "{\"easy\": \"Difficulty: Easy (red AI behaviour only \\u2014 same costs, same economy, same unit stats; applies at the next match start)\", \"normal\": \"Difficulty: Normal (red AI behaviour only \\u2014 same costs, same economy, same unit stats; applies at the next match start)\", \"hard\": \"Difficulty: Hard (red AI behaviour only \\u2014 same costs, same economy, same unit stats; applies at the next match start)\"}"
+ },
+ {
+  "name": "tutorial step 1 Look",
+  "ok": true,
+  "detail": "Tutorial 1 of 7 \u2014 Look around: Drag the ground to pan, or tap Zoom + to zoom in. Next tap: drag to pan, or tap a Zoom button."
+ },
+ {
+  "name": "tutorial step 2 Select (zoom advanced it)",
+  "ok": true,
+  "detail": "Tutorial 2 of 7 \u2014 Select a unit: Tap a blue unit to select it. Next tap: tap a blue unit."
+ },
+ {
+  "name": "tutorial select taps a blue unit",
+  "ok": true,
+  "detail": "status={'scrap': '500', 'blue': '10', 'red': '11', 'wrecks': '1', 'tick': '107', 'selected': '1', 'zoom': '1.25', 'mode': 'move'}"
+ },
+ {
+  "name": "tutorial step 3 Move",
+  "ok": true,
+  "detail": "Tutorial 3 of 7 \u2014 Move: Tap open ground to move your selected unit. A dashed line shows its path. Next tap: tap open ground to move."
+ },
+ {
+  "name": "tutorial step 4 Attack",
+  "ok": true,
+  "detail": "Tutorial 4 of 7 \u2014 Attack: Tap the pulsing red target to attack it. It cannot shoot back. Next tap: tap the red target."
+ },
+ {
+  "name": "tutorial step 5 Build",
+  "ok": true,
+  "detail": "Tutorial 5 of 7 \u2014 Build: Tap your Command Core, then tap Scout Buggy to build one. Next tap: tap your Command Core. (Tap the pulsing Command Core.)"
+ },
+ {
+  "name": "tutorial build panel opens on core tap",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "tutorial Scout Buggy queued",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "tutorial step 6 Salvage (build completed)",
+  "ok": true,
+  "detail": "Tutorial 6 of 7 \u2014 Salvage: Select a unit, then tap the pulsing wreck to collect its scrap. It starts at 32 scrap and shrinks over 120 seconds. Next tap: tap a blue unit, then the wreck. (No unit selected \u2014 tap a blue unit first.)"
+ },
+ {
+  "name": "tutorial salvage gains scrap",
+  "ok": true,
+  "detail": "420 -> 449"
+ },
+ {
+  "name": "tutorial step 7 How to win",
+  "ok": true,
+  "detail": "Tutorial 6 of 7 \u2014 Salvage: Select a unit, then tap the pulsing wreck to collect its scrap. It starts at 32 scrap and shrinks over 120 seconds. Next tap: tap a blue unit, then the wreck."
+ },
+ {
+  "name": "tutorial Play a real game starts First Map",
+  "ok": true,
+  "detail": {
+   "scrap": "500",
+   "blue": "9",
+   "red": "10",
+   "wrecks": "0",
+   "tick": "34",
+   "selected": "0",
+   "zoom": "1.00",
+   "mode": "move"
+  }
+ },
+ {
+  "name": "map second starts",
+  "ok": true,
+  "detail": "Map: Second Map \u2014 Twin Bridges 80x50 | Scrap: 500 | Iron Eden units: 9 | Xandria units: 10 | Wrecks: 0 | Tick: 36 | Sele"
+ },
+ {
+  "name": "map third starts",
+  "ok": true,
+  "detail": "Map: Third Map \u2014 Forest Belt 80x50 | Scrap: 500 | Iron Eden units: 9 | Xandria units: 10 | Wrecks: 0 | Tick: 36 | Select"
+ },
+ {
+  "name": "twin-stick info panel offers Take Control for armed unit",
+  "ok": true,
+  "detail": "Scout Buggy (iron_eden)\nHP: 60 / 60 \u00a0 Armour: Light\nWeapon: Scout Autocannon\nCost: 80 scrap\nTake Con"
+ },
+ {
+  "name": "twin-stick control entered",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "twin-stick driving holds control",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "twin-stick Esc releases, selection preserved",
+  "ok": true,
+  "detail": "selected=1"
+ },
+ {
+  "name": "structure shows no Take Control",
+  "ok": true,
+  "detail": "Command Core (iron_eden)\nHP: 800 / 800 \u00a0 Armour: Fortified\nRole: Faction command structure. Losing i"
+ },
+ {
+  "name": "hero Drop Back In visible at match start",
+  "ok": true,
+  "detail": "Drop Back In"
+ },
+ {
+  "name": "hero drop lands controlled",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "hero release -> 10s cooldown label",
+  "ok": true,
+  "detail": "Drop ready in 9s"
+ },
+ {
+  "name": "hero re-drop ready after cooldown",
+  "ok": true,
+  "detail": "Drop Back In"
+ },
+ {
+  "name": "hero re-drop preserves HP (release HP == re-drop HP)",
+  "ok": true,
+  "detail": "HP: 200 / 200 | Weapon range: 6 tiles vs HP: 200 / 200 | Weapon range: 6 tiles (1s later: HP: 200 / 200 | Weapon range: 6 tiles)"
+ },
+ {
+  "name": "hero death observed",
+  "ok": true,
+  "detail": "wrecks 0 -> 1"
+ },
+ {
+  "name": "hero death -> 30s-class cooldown label",
+  "ok": true,
+  "detail": "Drop ready in 29s"
+ },
+ {
+  "name": "hero redeploy ready after death cooldown",
+  "ok": true,
+  "detail": "Drop Back In"
+ },
+ {
+  "name": "hero redeploy lands at full HP 200/200",
+  "ok": true,
+  "detail": "HP: 200 / 200 | Weapon range: 6 tiles"
+ },
+ {
+  "name": "rally set with feedback",
+  "ok": true,
+  "detail": "Rally set at (15.0, 25.0). New units will move there on spawn."
+ },
+ {
+  "name": "zoom out clamps at 0.40",
+  "ok": true,
+  "detail": "zoom=0.40"
+ },
+ {
+  "name": "zoom 1x resets to 1.00",
+  "ok": true,
+  "detail": "1.00"
+ },
+ {
+  "name": "pause freezes sim",
+  "ok": true,
+  "detail": "649 -> 649"
+ },
+ {
+  "name": "resume advances sim",
+  "ok": true,
+  "detail": "649 -> 679"
+ },
+ {
+  "name": "corruption notice shown",
+  "ok": true,
+  "detail": "Hero progress could not be read, so it was reset to level 1."
+ },
+ {
+  "name": "mobile portrait-390: canvas==stage, no overflow, buttons>=44px",
+  "ok": true,
+  "detail": "{\"overflowX\": 0, \"canvas\": [390, 443], \"stage\": [390, 443], \"minBtn\": 44, \"nBtn\": 16}"
+ },
+ {
+  "name": "portrait tray toggle keeps canvas==stage",
+  "ok": true,
+  "detail": "False->True [390, 358, 390, 358]"
+ },
+ {
+  "name": "mobile land-844: canvas==stage, no overflow, buttons>=44px",
+  "ok": true,
+  "detail": "{\"overflowX\": 0, \"canvas\": [544, 311], \"stage\": [544, 311], \"minBtn\": 44, \"nBtn\": 38}"
+ },
+ {
+  "name": "mobile land-932: canvas==stage, no overflow, buttons>=44px",
+  "ok": true,
+  "detail": "{\"overflowX\": 0, \"canvas\": [632, 370], \"stage\": [632, 370], \"minBtn\": 44, \"nBtn\": 38}"
+ },
+ {
+  "name": "touch-stick two simultaneous points, still controlling",
+  "ok": true,
+  "detail": ""
+ },
+ {
+  "name": "throw match reaches a terminal panel",
+  "ok": true,
+  "detail": "{\"title\": \"Defeat \\u2014 Xandria wins.\", \"stats\": \"Ticks elapsed: 1264 | Sim time: 63.2s | Winning units remaining: 15 | Wrecks created: 11 | Wrecks still on the field: 5 | Hero XP +25 (level 1 -> 1)\"}"
+ },
+ {
+  "name": "throw match ends in defeat (expected shape)",
+  "ok": true,
+  "detail": "Defeat \u2014 Xandria wins."
+ },
+ {
+  "name": "loss arc menu: Level 1, 25 XP, 0 wins",
+  "ok": true,
+  "detail": "Command Mech \u2014 Level 1 | 25 XP | 0 skill points unspent | 1 matches, 0 wins"
+ }
+]

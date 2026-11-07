@@ -1,0 +1,521 @@
+{
+  "classes": {
+    "bulwark": [
+      {
+        "slug": "rampart_mk2",
+        "class": "bulwark",
+        "blue": "bulwark/rampart_mk2.png",
+        "blue_512": "bulwark/rampart_mk2-512.png",
+        "red": "bulwark/rampart_mk2-red.png",
+        "red_512": "bulwark/rampart_mk2-red-512.png"
+      },
+      {
+        "slug": "bastion",
+        "class": "bulwark",
+        "blue": "bulwark/bastion.png",
+        "blue_512": "bulwark/bastion-512.png",
+        "red": "bulwark/bastion-red.png",
+        "red_512": "bulwark/bastion-red-512.png"
+      },
+      {
+        "slug": "ironclad",
+        "class": "bulwark",
+        "blue": "bulwark/ironclad.png",
+        "blue_512": "bulwark/ironclad-512.png",
+        "red": "bulwark/ironclad-red.png",
+        "red_512": "bulwark/ironclad-red-512.png"
+      },
+      {
+        "slug": "goliath",
+        "class": "bulwark",
+        "blue": "bulwark/goliath.png",
+        "blue_512": "bulwark/goliath-512.png",
+        "red": "bulwark/goliath-red.png",
+        "red_512": "bulwark/goliath-red-512.png"
+      },
+      {
+        "slug": "gatekeeper",
+        "class": "bulwark",
+        "blue": "bulwark/gatekeeper.png",
+        "blue_512": "bulwark/gatekeeper-512.png",
+        "red": "bulwark/gatekeeper-red.png",
+        "red_512": "bulwark/gatekeeper-red-512.png"
+      },
+      {
+        "slug": "redoubt",
+        "class": "bulwark",
+        "blue": "bulwark/redoubt.png",
+        "blue_512": "bulwark/redoubt-512.png",
+        "red": "bulwark/redoubt-red.png",
+        "red_512": "bulwark/redoubt-red-512.png"
+      },
+      {
+        "slug": "breakwater",
+        "class": "bulwark",
+        "blue": "bulwark/breakwater.png",
+        "blue_512": "bulwark/breakwater-512.png",
+        "red": "bulwark/breakwater-red.png",
+        "red_512": "bulwark/breakwater-red-512.png"
+      },
+      {
+        "slug": "dreadnought",
+        "class": "bulwark",
+        "blue": "bulwark/dreadnought.png",
+        "blue_512": "bulwark/dreadnought-512.png",
+        "red": "bulwark/dreadnought-red.png",
+        "red_512": "bulwark/dreadnought-red-512.png"
+      }
+    ],
+    "vespid": [
+      {
+        "slug": "needlewing",
+        "class": "vespid",
+        "blue": "vespid/needlewing.png",
+        "blue_512": "vespid/needlewing-512.png",
+        "red": "vespid/needlewing-red.png",
+        "red_512": "vespid/needlewing-red-512.png"
+      },
+      {
+        "slug": "ghoststep",
+        "class": "vespid",
+        "blue": "vespid/ghoststep.png",
+        "blue_512": "vespid/ghoststep-512.png",
+        "red": "vespid/ghoststep-red.png",
+        "red_512": "vespid/ghoststep-red-512.png"
+      },
+      {
+        "slug": "flicker",
+        "class": "vespid",
+        "blue": "vespid/flicker.png",
+        "blue_512": "vespid/flicker-512.png",
+        "red": "vespid/flicker-red.png",
+        "red_512": "vespid/flicker-red-512.png"
+      },
+      {
+        "slug": "longsight",
+        "class": "vespid",
+        "blue": "vespid/longsight.png",
+        "blue_512": "vespid/longsight-512.png",
+        "red": "vespid/longsight-red.png",
+        "red_512": "vespid/longsight-red-512.png"
+      },
+      {
+        "slug": "threadrunner",
+        "class": "vespid",
+        "blue": "vespid/threadrunner.png",
+        "blue_512": "vespid/threadrunner-512.png",
+        "red": "vespid/threadrunner-red.png",
+        "red_512": "vespid/threadrunner-red-512.png"
+      },
+      {
+        "slug": "jackrabbit",
+        "class": "vespid",
+        "blue": "vespid/jackrabbit.png",
+        "blue_512": "vespid/jackrabbit-512.png",
+        "red": "vespid/jackrabbit-red.png",
+        "red_512": "vespid/jackrabbit-red-512.png"
+      },
+      {
+        "slug": "nightglass",
+        "class": "vespid",
+        "blue": "vespid/nightglass.png",
+        "blue_512": "vespid/nightglass-512.png",
+        "red": "vespid/nightglass-red.png",
+        "red_512": "vespid/nightglass-red-512.png"
+      },
+      {
+        "slug": "wraithrunner",
+        "class": "vespid",
+        "blue": "vespid/wraithrunner.png",
+        "blue_512": "vespid/wraithrunner-512.png",
+        "red": "vespid/wraithrunner-red.png",
+        "red_512": "vespid/wraithrunner-red-512.png"
+      }
+    ],
+    "longshot": [
+      {
+        "slug": "deadeye",
+        "class": "longshot",
+        "blue": "longshot/deadeye.png",
+        "blue_512": "longshot/deadeye-512.png",
+        "red": "longshot/deadeye-red.png",
+        "red_512": "longshot/deadeye-red-512.png"
+      },
+      {
+        "slug": "siegeback",
+        "class": "longshot",
+        "blue": "longshot/siegeback.png",
+        "blue_512": "longshot/siegeback-512.png",
+        "red": "longshot/siegeback-red.png",
+        "red_512": "longshot/siegeback-red-512.png"
+      },
+      {
+        "slug": "thunderhead",
+        "class": "longshot",
+        "blue": "longshot/thunderhead.png",
+        "blue_512": "longshot/thunderhead-512.png",
+        "red": "longshot/thunderhead-red.png",
+        "red_512": "longshot/thunderhead-red-512.png"
+      },
+      {
+        "slug": "mortarjack",
+        "class": "longshot",
+        "blue": "longshot/mortarjack.png",
+        "blue_512": "longshot/mortarjack-512.png",
+        "red": "longshot/mortarjack-red.png",
+        "red_512": "longshot/mortarjack-red-512.png"
+      },
+      {
+        "slug": "railwarden",
+        "class": "longshot",
+        "blue": "longshot/railwarden.png",
+        "blue_512": "longshot/railwarden-512.png",
+        "red": "longshot/railwarden-red.png",
+        "red_512": "longshot/railwarden-red-512.png"
+      },
+      {
+        "slug": "firestorm",
+        "class": "longshot",
+        "blue": "longshot/firestorm.png",
+        "blue_512": "longshot/firestorm-512.png",
+        "red": "longshot/firestorm-red.png",
+        "red_512": "longshot/firestorm-red-512.png"
+      },
+      {
+        "slug": "horizon",
+        "class": "longshot",
+        "blue": "longshot/horizon.png",
+        "blue_512": "longshot/horizon-512.png",
+        "red": "longshot/horizon-red.png",
+        "red_512": "longshot/horizon-red-512.png"
+      },
+      {
+        "slug": "avalanche",
+        "class": "longshot",
+        "blue": "longshot/avalanche.png",
+        "blue_512": "longshot/avalanche-512.png",
+        "red": "longshot/avalanche-red.png",
+        "red_512": "longshot/avalanche-red-512.png"
+      }
+    ],
+    "striker": [
+      {
+        "slug": "javelin",
+        "class": "striker",
+        "blue": "striker/javelin.png",
+        "blue_512": "striker/javelin-512.png",
+        "red": "striker/javelin-red.png",
+        "red_512": "striker/javelin-red-512.png"
+      },
+      {
+        "slug": "raptor",
+        "class": "striker",
+        "blue": "striker/raptor.png",
+        "blue_512": "striker/raptor-512.png",
+        "red": "striker/raptor-red.png",
+        "red_512": "striker/raptor-red-512.png"
+      },
+      {
+        "slug": "hellhound",
+        "class": "striker",
+        "blue": "striker/hellhound.png",
+        "blue_512": "striker/hellhound-512.png",
+        "red": "striker/hellhound-red.png",
+        "red_512": "striker/hellhound-red-512.png"
+      },
+      {
+        "slug": "reaver",
+        "class": "striker",
+        "blue": "striker/reaver.png",
+        "blue_512": "striker/reaver-512.png",
+        "red": "striker/reaver-red.png",
+        "red_512": "striker/reaver-red-512.png"
+      },
+      {
+        "slug": "breakneck",
+        "class": "striker",
+        "blue": "striker/breakneck.png",
+        "blue_512": "striker/breakneck-512.png",
+        "red": "striker/breakneck-red.png",
+        "red_512": "striker/breakneck-red-512.png"
+      },
+      {
+        "slug": "pitbull",
+        "class": "striker",
+        "blue": "striker/pitbull.png",
+        "blue_512": "striker/pitbull-512.png",
+        "red": "striker/pitbull-red.png",
+        "red_512": "striker/pitbull-red-512.png"
+      },
+      {
+        "slug": "iron_jackal",
+        "class": "striker",
+        "blue": "striker/iron_jackal.png",
+        "blue_512": "striker/iron_jackal-512.png",
+        "red": "striker/iron_jackal-red.png",
+        "red_512": "striker/iron_jackal-red-512.png"
+      },
+      {
+        "slug": "riotbreaker",
+        "class": "striker",
+        "blue": "striker/riotbreaker.png",
+        "blue_512": "striker/riotbreaker-512.png",
+        "red": "striker/riotbreaker-red.png",
+        "red_512": "striker/riotbreaker-red-512.png"
+      }
+    ],
+    "additional": [
+      {
+        "slug": "forgeback",
+        "class": "additional",
+        "blue": "additional/forgeback.png",
+        "blue_512": "additional/forgeback-512.png",
+        "red": "additional/forgeback-red.png",
+        "red_512": "additional/forgeback-red-512.png"
+      },
+      {
+        "slug": "scavenger",
+        "class": "additional",
+        "blue": "additional/scavenger.png",
+        "blue_512": "additional/scavenger-512.png",
+        "red": "additional/scavenger-red.png",
+        "red_512": "additional/scavenger-red-512.png"
+      },
+      {
+        "slug": "undertaker",
+        "class": "additional",
+        "blue": "additional/undertaker.png",
+        "blue_512": "additional/undertaker-512.png",
+        "red": "additional/undertaker-red.png",
+        "red_512": "additional/undertaker-red-512.png"
+      },
+      {
+        "slug": "bastard_king",
+        "class": "additional",
+        "blue": "additional/bastard_king.png",
+        "blue_512": "additional/bastard_king-512.png",
+        "red": "additional/bastard_king-red.png",
+        "red_512": "additional/bastard_king-red-512.png"
+      },
+      {
+        "slug": "expansion_warden",
+        "class": "additional",
+        "blue": "additional/expansion_warden.png",
+        "blue_512": "additional/expansion_warden-512.png",
+        "red": "additional/expansion_warden-red.png",
+        "red_512": "additional/expansion_warden-red-512.png"
+      },
+      {
+        "slug": "spiderframe",
+        "class": "additional",
+        "blue": "additional/spiderframe.png",
+        "blue_512": "additional/spiderframe-512.png",
+        "red": "additional/spiderframe-red.png",
+        "red_512": "additional/spiderframe-red-512.png"
+      },
+      {
+        "slug": "burrower",
+        "class": "additional",
+        "blue": "additional/burrower.png",
+        "blue_512": "additional/burrower-512.png",
+        "red": "additional/burrower-red.png",
+        "red_512": "additional/burrower-red-512.png"
+      },
+      {
+        "slug": "amphibian",
+        "class": "additional",
+        "blue": "additional/amphibian.png",
+        "blue_512": "additional/amphibian-512.png",
+        "red": "additional/amphibian-red.png",
+        "red_512": "additional/amphibian-red-512.png"
+      },
+      {
+        "slug": "magwalker",
+        "class": "additional",
+        "blue": "additional/magwalker.png",
+        "blue_512": "additional/magwalker-512.png",
+        "red": "additional/magwalker-red.png",
+        "red_512": "additional/magwalker-red-512.png"
+      },
+      {
+        "slug": "skyhook",
+        "class": "additional",
+        "blue": "additional/skyhook.png",
+        "blue_512": "additional/skyhook-512.png",
+        "red": "additional/skyhook-red.png",
+        "red_512": "additional/skyhook-red-512.png"
+      },
+      {
+        "slug": "juggernaut",
+        "class": "additional",
+        "blue": "additional/juggernaut.png",
+        "blue_512": "additional/juggernaut-512.png",
+        "red": "additional/juggernaut-red.png",
+        "red_512": "additional/juggernaut-red-512.png"
+      },
+      {
+        "slug": "artificer",
+        "class": "additional",
+        "blue": "additional/artificer.png",
+        "blue_512": "additional/artificer-512.png",
+        "red": "additional/artificer-red.png",
+        "red_512": "additional/artificer-red-512.png"
+      },
+      {
+        "slug": "scrapper",
+        "class": "additional",
+        "blue": "additional/scrapper.png",
+        "blue_512": "additional/scrapper-512.png",
+        "red": "additional/scrapper-red.png",
+        "red_512": "additional/scrapper-red-512.png"
+      },
+      {
+        "slug": "revenant",
+        "class": "additional",
+        "blue": "additional/revenant.png",
+        "blue_512": "additional/revenant-512.png",
+        "red": "additional/revenant-red.png",
+        "red_512": "additional/revenant-red-512.png"
+      },
+      {
+        "slug": "mimic",
+        "class": "additional",
+        "blue": "additional/mimic.png",
+        "blue_512": "additional/mimic-512.png",
+        "red": "additional/mimic-red.png",
+        "red_512": "additional/mimic-red-512.png"
+      },
+      {
+        "slug": "corsair",
+        "class": "additional",
+        "blue": "additional/corsair.png",
+        "blue_512": "additional/corsair-512.png",
+        "red": "additional/corsair-red.png",
+        "red_512": "additional/corsair-red-512.png"
+      },
+      {
+        "slug": "dronewright",
+        "class": "additional",
+        "blue": "additional/dronewright.png",
+        "blue_512": "additional/dronewright-512.png",
+        "red": "additional/dronewright-red.png",
+        "red_512": "additional/dronewright-red-512.png"
+      },
+      {
+        "slug": "bastille",
+        "class": "additional",
+        "blue": "additional/bastille.png",
+        "blue_512": "additional/bastille-512.png",
+        "red": "additional/bastille-red.png",
+        "red_512": "additional/bastille-red-512.png"
+      },
+      {
+        "slug": "glass_cannon",
+        "class": "additional",
+        "blue": "additional/glass_cannon.png",
+        "blue_512": "additional/glass_cannon-512.png",
+        "red": "additional/glass_cannon-red.png",
+        "red_512": "additional/glass_cannon-red-512.png"
+      },
+      {
+        "slug": "furnace_knight",
+        "class": "additional",
+        "blue": "additional/furnace_knight.png",
+        "blue_512": "additional/furnace_knight-512.png",
+        "red": "additional/furnace_knight-red.png",
+        "red_512": "additional/furnace_knight-red-512.png"
+      },
+      {
+        "slug": "coilrunner",
+        "class": "additional",
+        "blue": "additional/coilrunner.png",
+        "blue_512": "additional/coilrunner-512.png",
+        "red": "additional/coilrunner-red.png",
+        "red_512": "additional/coilrunner-red-512.png"
+      },
+      {
+        "slug": "salvage_titan",
+        "class": "additional",
+        "blue": "additional/salvage_titan.png",
+        "blue_512": "additional/salvage_titan-512.png",
+        "red": "additional/salvage_titan-red.png",
+        "red_512": "additional/salvage_titan-red-512.png"
+      },
+      {
+        "slug": "signal_ghost",
+        "class": "additional",
+        "blue": "additional/signal_ghost.png",
+        "blue_512": "additional/signal_ghost-512.png",
+        "red": "additional/signal_ghost-red.png",
+        "red_512": "additional/signal_ghost-red-512.png"
+      },
+      {
+        "slug": "tunnelfox",
+        "class": "additional",
+        "blue": "additional/tunnelfox.png",
+        "blue_512": "additional/tunnelfox-512.png",
+        "red": "additional/tunnelfox-red.png",
+        "red_512": "additional/tunnelfox-red-512.png"
+      },
+      {
+        "slug": "siege_walker",
+        "class": "additional",
+        "blue": "additional/siege_walker.png",
+        "blue_512": "additional/siege_walker-512.png",
+        "red": "additional/siege_walker-red.png",
+        "red_512": "additional/siege_walker-red-512.png"
+      },
+      {
+        "slug": "plague_engine",
+        "class": "additional",
+        "blue": "additional/plague_engine.png",
+        "blue_512": "additional/plague_engine-512.png",
+        "red": "additional/plague_engine-red.png",
+        "red_512": "additional/plague_engine-red-512.png"
+      },
+      {
+        "slug": "stormcaller",
+        "class": "additional",
+        "blue": "additional/stormcaller.png",
+        "blue_512": "additional/stormcaller-512.png",
+        "red": "additional/stormcaller-red.png",
+        "red_512": "additional/stormcaller-red-512.png"
+      },
+      {
+        "slug": "chronomancer",
+        "class": "additional",
+        "blue": "additional/chronomancer.png",
+        "blue_512": "additional/chronomancer-512.png",
+        "red": "additional/chronomancer-red.png",
+        "red_512": "additional/chronomancer-red-512.png"
+      },
+      {
+        "slug": "graveyard",
+        "class": "additional",
+        "blue": "additional/graveyard.png",
+        "blue_512": "additional/graveyard-512.png",
+        "red": "additional/graveyard-red.png",
+        "red_512": "additional/graveyard-red-512.png"
+      },
+      {
+        "slug": "expansion_colossus",
+        "class": "additional",
+        "blue": "additional/expansion_colossus.png",
+        "blue_512": "additional/expansion_colossus-512.png",
+        "red": "additional/expansion_colossus-red.png",
+        "red_512": "additional/expansion_colossus-red-512.png"
+      },
+      {
+        "slug": "scrap_saint",
+        "class": "additional",
+        "blue": "additional/scrap_saint.png",
+        "blue_512": "additional/scrap_saint-512.png",
+        "red": "additional/scrap_saint-red.png",
+        "red_512": "additional/scrap_saint-red-512.png"
+      }
+    ]
+  },
+  "total_chassis": 63,
+  "total_distinct_sprites": 126,
+  "total_files": 252
+}

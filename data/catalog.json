@@ -1,0 +1,2336 @@
+{
+  "version": "prototype01",
+  "note": "Data catalog only. Units/structures marked milestone 02 in their description have no gameplay system in Prototype 01; their data is validated, not simulated.",
+  "armorClasses": [
+    "Unarmored",
+    "Light",
+    "Medium",
+    "Heavy",
+    "Fortified",
+    "Structure"
+  ],
+  "damageTypes": [
+    "Kinetic",
+    "Explosive",
+    "Energy",
+    "Thermal",
+    "Siege",
+    "Disruption"
+  ],
+  "armorMatrix": {
+    "Kinetic": {
+      "Unarmored": 1.2,
+      "Light": 1.0,
+      "Medium": 0.9,
+      "Heavy": 0.7,
+      "Fortified": 0.5,
+      "Structure": 0.8
+    },
+    "Explosive": {
+      "Unarmored": 1.1,
+      "Light": 1.1,
+      "Medium": 1.0,
+      "Heavy": 0.8,
+      "Fortified": 0.6,
+      "Structure": 1.2
+    },
+    "Energy": {
+      "Unarmored": 1.0,
+      "Light": 1.0,
+      "Medium": 1.0,
+      "Heavy": 0.9,
+      "Fortified": 0.7,
+      "Structure": 0.9
+    },
+    "Thermal": {
+      "Unarmored": 1.2,
+      "Light": 1.1,
+      "Medium": 0.9,
+      "Heavy": 0.8,
+      "Fortified": 0.6,
+      "Structure": 0.7
+    },
+    "Siege": {
+      "Unarmored": 1.0,
+      "Light": 0.9,
+      "Medium": 1.0,
+      "Heavy": 1.1,
+      "Fortified": 1.3,
+      "Structure": 1.4
+    },
+    "Disruption": {
+      "Unarmored": 1.0,
+      "Light": 1.0,
+      "Medium": 1.0,
+      "Heavy": 1.0,
+      "Fortified": 1.0,
+      "Structure": 0.5
+    }
+  },
+  "weaponFamilies": [
+    "Autocannon",
+    "Heavy Cannon",
+    "Missile Launcher",
+    "Rocket Artillery",
+    "Railgun",
+    "Mortar",
+    "Flamethrower",
+    "Anti-air Cannon",
+    "Laser",
+    "Siege Cannon",
+    "Melee Weapon",
+    "Electronic Warfare"
+  ],
+  "weapons": [
+    {
+      "id": "w_scout_gun",
+      "name": "Scout Autocannon",
+      "family": "Autocannon",
+      "damage": 8,
+      "range": 5,
+      "minRange": 0,
+      "projectileSpeed": 24,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.85,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 0.45
+    },
+    {
+      "id": "w_autocannon",
+      "name": "Autocannon",
+      "family": "Autocannon",
+      "damage": 12,
+      "range": 6,
+      "minRange": 0,
+      "projectileSpeed": 24,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.85,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 0.5
+    },
+    {
+      "id": "w_heavy_cannon",
+      "name": "Heavy Cannon",
+      "family": "Heavy Cannon",
+      "damage": 28,
+      "range": 7,
+      "minRange": 0,
+      "projectileSpeed": 20,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.8,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 1.2
+    },
+    {
+      "id": "w_light_cannon",
+      "name": "Light Cannon",
+      "family": "Heavy Cannon",
+      "damage": 14,
+      "range": 6,
+      "minRange": 0,
+      "projectileSpeed": 22,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.85,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 0.8
+    },
+    {
+      "id": "w_missile",
+      "name": "Missile Launcher",
+      "family": "Missile Launcher",
+      "damage": 22,
+      "range": 9,
+      "minRange": 0,
+      "projectileSpeed": 18,
+      "splashRadius": 1.5,
+      "falloff": 0.5,
+      "accuracy": 0.85,
+      "damageType": "Explosive",
+      "targetClasses": [
+        "ground",
+        "air",
+        "structure"
+      ],
+      "interval": 1.4
+    },
+    {
+      "id": "w_aa_missile",
+      "name": "AA Missile",
+      "family": "Missile Launcher",
+      "damage": 18,
+      "range": 8,
+      "minRange": 0,
+      "projectileSpeed": 30,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.9,
+      "damageType": "Explosive",
+      "targetClasses": [
+        "air"
+      ],
+      "interval": 1.0
+    },
+    {
+      "id": "w_aa_cannon",
+      "name": "Anti-Air Cannon",
+      "family": "Anti-air Cannon",
+      "damage": 10,
+      "range": 7,
+      "minRange": 0,
+      "projectileSpeed": 36,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.85,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "air"
+      ],
+      "interval": 0.4
+    },
+    {
+      "id": "w_interceptor_gun",
+      "name": "Interceptor Gun",
+      "family": "Autocannon",
+      "damage": 9,
+      "range": 6,
+      "minRange": 0,
+      "projectileSpeed": 30,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.88,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "air"
+      ],
+      "interval": 0.35
+    },
+    {
+      "id": "w_rocket_artillery",
+      "name": "Rocket Artillery",
+      "family": "Rocket Artillery",
+      "damage": 30,
+      "range": 16,
+      "minRange": 4,
+      "projectileSpeed": 14,
+      "splashRadius": 3.0,
+      "falloff": 0.6,
+      "accuracy": 0.8,
+      "damageType": "Explosive",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 3.0
+    },
+    {
+      "id": "w_siege_cannon",
+      "name": "Siege Cannon",
+      "family": "Siege Cannon",
+      "damage": 55,
+      "range": 18,
+      "minRange": 5,
+      "projectileSpeed": 12,
+      "splashRadius": 2.5,
+      "falloff": 0.5,
+      "accuracy": 0.8,
+      "damageType": "Siege",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 4.0
+    },
+    {
+      "id": "w_mortar",
+      "name": "Mortar",
+      "family": "Mortar",
+      "damage": 20,
+      "range": 12,
+      "minRange": 3,
+      "projectileSpeed": 10,
+      "splashRadius": 2.0,
+      "falloff": 0.5,
+      "accuracy": 0.8,
+      "damageType": "Explosive",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 2.0
+    },
+    {
+      "id": "w_railgun",
+      "name": "Railgun",
+      "family": "Railgun",
+      "damage": 40,
+      "range": 20,
+      "minRange": 6,
+      "projectileSpeed": 60,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.95,
+      "damageType": "Energy",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 3.5
+    },
+    {
+      "id": "w_light_railgun",
+      "name": "Light Railgun",
+      "family": "Railgun",
+      "damage": 24,
+      "range": 14,
+      "minRange": 3,
+      "projectileSpeed": 50,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.92,
+      "damageType": "Energy",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 2.2
+    },
+    {
+      "id": "w_laser",
+      "name": "Laser",
+      "family": "Laser",
+      "damage": 16,
+      "range": 8,
+      "minRange": 0,
+      "projectileSpeed": 0,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.9,
+      "damageType": "Energy",
+      "targetClasses": [
+        "ground",
+        "air",
+        "structure"
+      ],
+      "interval": 0.7
+    },
+    {
+      "id": "w_flamethrower",
+      "name": "Flamethrower",
+      "family": "Flamethrower",
+      "damage": 9,
+      "range": 3,
+      "minRange": 0,
+      "projectileSpeed": 8,
+      "splashRadius": 1.5,
+      "falloff": 0.4,
+      "accuracy": 0.9,
+      "damageType": "Thermal",
+      "targetClasses": [
+        "ground"
+      ],
+      "interval": 0.3
+    },
+    {
+      "id": "w_melee",
+      "name": "Melee Weapon",
+      "family": "Melee Weapon",
+      "damage": 25,
+      "range": 1.2,
+      "minRange": 0,
+      "projectileSpeed": 0,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.95,
+      "damageType": "Kinetic",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 0.8
+    },
+    {
+      "id": "w_ew",
+      "name": "EW Disruptor",
+      "family": "Electronic Warfare",
+      "damage": 6,
+      "range": 7,
+      "minRange": 0,
+      "projectileSpeed": 0,
+      "splashRadius": 0,
+      "falloff": 0,
+      "accuracy": 0.9,
+      "damageType": "Disruption",
+      "targetClasses": [
+        "ground",
+        "air"
+      ],
+      "interval": 2.0
+    },
+    {
+      "id": "w_bomb",
+      "name": "Bomb Load",
+      "family": "Rocket Artillery",
+      "damage": 45,
+      "range": 4,
+      "minRange": 0,
+      "projectileSpeed": 0,
+      "splashRadius": 3.5,
+      "falloff": 0.5,
+      "accuracy": 0.85,
+      "damageType": "Explosive",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 2.5
+    },
+    {
+      "id": "w_plasma_laser",
+      "name": "Plasma Laser",
+      "family": "Laser",
+      "damage": 22,
+      "range": 9,
+      "minRange": 0,
+      "projectileSpeed": 0,
+      "splashRadius": 1.0,
+      "falloff": 0.3,
+      "accuracy": 0.88,
+      "damageType": "Energy",
+      "targetClasses": [
+        "ground",
+        "structure"
+      ],
+      "interval": 1.0
+    }
+  ],
+  "units": [
+    {
+      "id": "scout_buggy",
+      "name": "Scout Buggy",
+      "category": "recon",
+      "chassis": "Scout",
+      "movementClass": "ground",
+      "speed": 7.0,
+      "hp": 60,
+      "armor": "Light",
+      "vision": 10,
+      "size": 0.4,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 80,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 8,
+      "description": "Fast vision unit. Cheap, fragile."
+    },
+    {
+      "id": "vespid_scout",
+      "name": "Vespid Scout",
+      "category": "recon",
+      "chassis": "Vespid",
+      "movementClass": "ground",
+      "speed": 8.5,
+      "hp": 70,
+      "armor": "Light",
+      "vision": 11,
+      "size": 0.4,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 120,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 10,
+      "description": "Fast mech with strong vision and a disengagement advantage."
+    },
+    {
+      "id": "combat_drone",
+      "name": "Combat Drone",
+      "category": "recon",
+      "chassis": "Scout",
+      "movementClass": "air",
+      "speed": 7.5,
+      "hp": 45,
+      "armor": "Light",
+      "vision": 8,
+      "size": 0.35,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 90,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 8,
+      "description": "Low-cost harassment and screening platform."
+    },
+    {
+      "id": "radar_scout",
+      "name": "Radar Scout",
+      "category": "recon",
+      "chassis": "Scout",
+      "movementClass": "ground",
+      "speed": 6.0,
+      "hp": 55,
+      "armor": "Light",
+      "vision": 13,
+      "size": 0.4,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 110,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 10,
+      "description": "Detects distant movement. Weak in direct combat."
+    },
+    {
+      "id": "salvage_team",
+      "name": "Salvage Team",
+      "category": "recon",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 5.0,
+      "hp": 50,
+      "armor": "Unarmored",
+      "vision": 7,
+      "size": 0.35,
+      "weapons": [],
+      "cost": {
+        "scrap": 60,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 6,
+      "description": "Infantry-scale salvage team (no weapon in prototype data; recovery is milestone 02)."
+    },
+    {
+      "id": "repair_scout",
+      "name": "Repair Scout",
+      "category": "recon",
+      "chassis": "Scout",
+      "movementClass": "ground",
+      "speed": 6.5,
+      "hp": 55,
+      "armor": "Light",
+      "vision": 8,
+      "size": 0.4,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 100,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 9,
+      "description": "Light scout with repair tools (repair is milestone 02)."
+    },
+    {
+      "id": "sensor_drone",
+      "name": "Sensor Drone",
+      "category": "recon",
+      "chassis": "Scout",
+      "movementClass": "air",
+      "speed": 7.0,
+      "hp": 40,
+      "armor": "Light",
+      "vision": 12,
+      "size": 0.3,
+      "weapons": [],
+      "cost": {
+        "scrap": 80,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 8,
+      "description": "Unarmed sensor platform with wide vision."
+    },
+    {
+      "id": "ew_skirmisher",
+      "name": "EW Skirmisher",
+      "category": "recon",
+      "chassis": "Vespid",
+      "movementClass": "ground",
+      "speed": 7.5,
+      "hp": 60,
+      "armor": "Light",
+      "vision": 9,
+      "size": 0.4,
+      "weapons": [
+        "w_ew"
+      ],
+      "cost": {
+        "scrap": 130,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 12,
+      "description": "Disrupts targeting and sensors at range."
+    },
+    {
+      "id": "fast_raider",
+      "name": "Fast Raider",
+      "category": "recon",
+      "chassis": "Lancer",
+      "movementClass": "ground",
+      "speed": 9.0,
+      "hp": 65,
+      "armor": "Light",
+      "vision": 8,
+      "size": 0.4,
+      "weapons": [
+        "w_autocannon"
+      ],
+      "cost": {
+        "scrap": 140,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 11,
+      "description": "Fast anti-structure raider."
+    },
+    {
+      "id": "decoy_drone",
+      "name": "Decoy Drone",
+      "category": "recon",
+      "chassis": "Scout",
+      "movementClass": "air",
+      "speed": 8.0,
+      "hp": 30,
+      "armor": "Light",
+      "vision": 7,
+      "size": 0.3,
+      "weapons": [],
+      "cost": {
+        "scrap": 50,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 5,
+      "description": "Disposable decoy. Draws fire, deals none."
+    },
+    {
+      "id": "medium_tank",
+      "name": "Medium Tank",
+      "category": "main_battle",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 220,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.6,
+      "weapons": [
+        "w_heavy_cannon"
+      ],
+      "cost": {
+        "scrap": 300,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 20,
+      "description": "Reliable frontline unit."
+    },
+    {
+      "id": "heavy_tank",
+      "name": "Heavy Tank",
+      "category": "main_battle",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 3.5,
+      "hp": 380,
+      "armor": "Heavy",
+      "vision": 7,
+      "size": 0.7,
+      "weapons": [
+        "w_heavy_cannon"
+      ],
+      "cost": {
+        "scrap": 520,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 30,
+      "description": "High durability, strong direct fire, slow."
+    },
+    {
+      "id": "bulwark_mech",
+      "name": "Bulwark Mech",
+      "category": "main_battle",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 4.0,
+      "hp": 320,
+      "armor": "Heavy",
+      "vision": 7,
+      "size": 0.65,
+      "weapons": [
+        "w_heavy_cannon"
+      ],
+      "cost": {
+        "scrap": 460,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 28,
+      "description": "Frontline armored mech that shields support units."
+    },
+    {
+      "id": "lancer_mech",
+      "name": "Lancer Mech",
+      "category": "main_battle",
+      "chassis": "Lancer",
+      "movementClass": "ground",
+      "speed": 6.0,
+      "hp": 200,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.55,
+      "weapons": [
+        "w_autocannon",
+        "w_melee"
+      ],
+      "cost": {
+        "scrap": 380,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 24,
+      "description": "Mobile assault platform for flanking and pursuit."
+    },
+    {
+      "id": "siege_cannon",
+      "name": "Siege Cannon",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 3.0,
+      "hp": 180,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.6,
+      "weapons": [
+        "w_siege_cannon"
+      ],
+      "cost": {
+        "scrap": 600,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 35,
+      "description": "Long-range bombardment against static defenses."
+    },
+    {
+      "id": "longshot_mech",
+      "name": "Longshot Artillery Mech",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 3.5,
+      "hp": 210,
+      "armor": "Medium",
+      "vision": 9,
+      "size": 0.6,
+      "weapons": [
+        "w_siege_cannon"
+      ],
+      "cost": {
+        "scrap": 700,
+        "power": 1,
+        "components": 2
+      },
+      "buildTime": 40,
+      "description": "Slow, expensive, long-range mech. Needs spotters."
+    },
+    {
+      "id": "rocket_battery",
+      "name": "Rocket Battery",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 4.0,
+      "hp": 170,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.6,
+      "weapons": [
+        "w_rocket_artillery"
+      ],
+      "cost": {
+        "scrap": 520,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 32,
+      "description": "Area saturation and formation disruption."
+    },
+    {
+      "id": "breach_walker",
+      "name": "Breach Walker",
+      "category": "artillery",
+      "chassis": "Rampart",
+      "movementClass": "ground",
+      "speed": 3.5,
+      "hp": 300,
+      "armor": "Heavy",
+      "vision": 7,
+      "size": 0.7,
+      "weapons": [
+        "w_siege_cannon"
+      ],
+      "cost": {
+        "scrap": 650,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 38,
+      "description": "Shorter-range siege platform built to survive return fire."
+    },
+    {
+      "id": "mortar_carrier",
+      "name": "Mortar Carrier",
+      "category": "artillery",
+      "chassis": "Scout",
+      "movementClass": "ground",
+      "speed": 5.0,
+      "hp": 140,
+      "armor": "Light",
+      "vision": 8,
+      "size": 0.55,
+      "weapons": [
+        "w_mortar"
+      ],
+      "cost": {
+        "scrap": 320,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 22,
+      "description": "Mobile indirect fire over obstacles."
+    },
+    {
+      "id": "heavy_railgun",
+      "name": "Heavy Railgun Platform",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 3.0,
+      "hp": 230,
+      "armor": "Heavy",
+      "vision": 10,
+      "size": 0.7,
+      "weapons": [
+        "w_railgun"
+      ],
+      "cost": {
+        "scrap": 800,
+        "power": 2,
+        "components": 2
+      },
+      "buildTime": 45,
+      "description": "Long-range precision siege platform."
+    },
+    {
+      "id": "rocket_artillery_mech",
+      "name": "Rocket Artillery Mech",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 190,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.6,
+      "weapons": [
+        "w_rocket_artillery"
+      ],
+      "cost": {
+        "scrap": 580,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 34,
+      "description": "Mech-mounted rocket artillery."
+    },
+    {
+      "id": "siege_engineer",
+      "name": "Siege Engineer",
+      "category": "artillery",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 120,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.5,
+      "weapons": [
+        "w_mortar"
+      ],
+      "cost": {
+        "scrap": 280,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 20,
+      "description": "Engineer vehicle for siege support."
+    },
+    {
+      "id": "demolition_crawler",
+      "name": "Demolition Crawler",
+      "category": "artillery",
+      "chassis": "Rampart",
+      "movementClass": "ground",
+      "speed": 3.5,
+      "hp": 260,
+      "armor": "Heavy",
+      "vision": 6,
+      "size": 0.65,
+      "weapons": [
+        "w_melee"
+      ],
+      "cost": {
+        "scrap": 420,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 26,
+      "description": "Anti-bunker demolition crawler."
+    },
+    {
+      "id": "experimental_artillery",
+      "name": "Experimental Artillery",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 2.5,
+      "hp": 280,
+      "armor": "Heavy",
+      "vision": 11,
+      "size": 0.8,
+      "weapons": [
+        "w_railgun"
+      ],
+      "cost": {
+        "scrap": 1100,
+        "power": 3,
+        "components": 3
+      },
+      "buildTime": 60,
+      "description": "Extremely expensive siege platform."
+    },
+    {
+      "id": "interceptor_drone",
+      "name": "Interceptor Drone",
+      "category": "anti_air",
+      "chassis": "Vespid",
+      "movementClass": "air",
+      "speed": 10.0,
+      "hp": 60,
+      "armor": "Light",
+      "vision": 9,
+      "size": 0.35,
+      "weapons": [
+        "w_interceptor_gun"
+      ],
+      "cost": {
+        "scrap": 150,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 12,
+      "description": "Fast response against aircraft and flying drones."
+    },
+    {
+      "id": "flak_tank",
+      "name": "Flak Tank",
+      "category": "anti_air",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 200,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.6,
+      "weapons": [
+        "w_aa_cannon"
+      ],
+      "cost": {
+        "scrap": 340,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 22,
+      "description": "Area defense against light aircraft."
+    },
+    {
+      "id": "missile_carrier",
+      "name": "Missile Carrier",
+      "category": "anti_air",
+      "chassis": "Scout",
+      "movementClass": "ground",
+      "speed": 5.0,
+      "hp": 170,
+      "armor": "Medium",
+      "vision": 9,
+      "size": 0.55,
+      "weapons": [
+        "w_aa_missile"
+      ],
+      "cost": {
+        "scrap": 400,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 26,
+      "description": "Mobile long-range anti-air platform."
+    },
+    {
+      "id": "gunship",
+      "name": "Gunship",
+      "category": "anti_air",
+      "chassis": "Lancer",
+      "movementClass": "air",
+      "speed": 8.0,
+      "hp": 180,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.55,
+      "weapons": [
+        "w_autocannon"
+      ],
+      "cost": {
+        "scrap": 420,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 26,
+      "description": "Close-support aircraft vs lightly armored targets."
+    },
+    {
+      "id": "strike_bomber",
+      "name": "Strike Bomber",
+      "category": "anti_air",
+      "chassis": "Lancer",
+      "movementClass": "air",
+      "speed": 7.5,
+      "hp": 220,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.6,
+      "weapons": [
+        "w_bomb"
+      ],
+      "cost": {
+        "scrap": 560,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 30,
+      "description": "High damage vs static structures and heavy targets."
+    },
+    {
+      "id": "transport_aircraft",
+      "name": "Transport Aircraft",
+      "category": "anti_air",
+      "chassis": "Scout",
+      "movementClass": "air",
+      "speed": 8.5,
+      "hp": 200,
+      "armor": "Light",
+      "vision": 8,
+      "size": 0.6,
+      "weapons": [],
+      "cost": {
+        "scrap": 380,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 24,
+      "description": "Moves eligible units between landing zones (transport is milestone 02)."
+    },
+    {
+      "id": "drone_carrier",
+      "name": "Drone Carrier",
+      "category": "anti_air",
+      "chassis": "Warden",
+      "movementClass": "air",
+      "speed": 6.0,
+      "hp": 320,
+      "armor": "Heavy",
+      "vision": 9,
+      "size": 0.8,
+      "weapons": [
+        "w_aa_cannon"
+      ],
+      "cost": {
+        "scrap": 700,
+        "power": 1,
+        "components": 2
+      },
+      "buildTime": 40,
+      "description": "Deploys and supports small aircraft."
+    },
+    {
+      "id": "recon_aircraft",
+      "name": "Recon Aircraft",
+      "category": "anti_air",
+      "chassis": "Vespid",
+      "movementClass": "air",
+      "speed": 11.0,
+      "hp": 70,
+      "armor": "Light",
+      "vision": 13,
+      "size": 0.4,
+      "weapons": [],
+      "cost": {
+        "scrap": 180,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 14,
+      "description": "Broad vision, minimal offense."
+    },
+    {
+      "id": "construction_vehicle",
+      "name": "Construction Vehicle",
+      "category": "support",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 160,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.55,
+      "weapons": [],
+      "cost": {
+        "scrap": 240,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 18,
+      "description": "Builds structures (construction is milestone 02)."
+    },
+    {
+      "id": "field_repair_mech",
+      "name": "Field Repair Mech",
+      "category": "support",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 5.0,
+      "hp": 170,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.55,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 260,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 18,
+      "description": "Restores allied health and armor (repair is milestone 02)."
+    },
+    {
+      "id": "recovery_crawler",
+      "name": "Recovery Crawler",
+      "category": "support",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 150,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.55,
+      "weapons": [],
+      "cost": {
+        "scrap": 220,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 16,
+      "description": "Collects salvage from wrecks (salvage is milestone 02)."
+    },
+    {
+      "id": "supply_carrier",
+      "name": "Supply Carrier",
+      "category": "support",
+      "chassis": "Scout",
+      "movementClass": "ground",
+      "speed": 5.5,
+      "hp": 140,
+      "armor": "Light",
+      "vision": 7,
+      "size": 0.5,
+      "weapons": [],
+      "cost": {
+        "scrap": 200,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 15,
+      "description": "Transports resources and support supplies."
+    },
+    {
+      "id": "shield_projector",
+      "name": "Shield Projector",
+      "category": "support",
+      "chassis": "Warden",
+      "movementClass": "ground",
+      "speed": 4.0,
+      "hp": 190,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.6,
+      "weapons": [
+        "w_ew"
+      ],
+      "cost": {
+        "scrap": 360,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 24,
+      "description": "Protects nearby units with a limited defensive field."
+    },
+    {
+      "id": "ew_mech",
+      "name": "Electronic Warfare Mech",
+      "category": "support",
+      "chassis": "Vespid",
+      "movementClass": "ground",
+      "speed": 6.0,
+      "hp": 150,
+      "armor": "Light",
+      "vision": 10,
+      "size": 0.5,
+      "weapons": [
+        "w_ew"
+      ],
+      "cost": {
+        "scrap": 340,
+        "power": 0,
+        "components": 1
+      },
+      "buildTime": 22,
+      "description": "Disrupts radar, targeting, and autonomous systems."
+    },
+    {
+      "id": "command_walker",
+      "name": "Command Walker",
+      "category": "support",
+      "chassis": "Warden",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 260,
+      "armor": "Heavy",
+      "vision": 9,
+      "size": 0.65,
+      "weapons": [
+        "w_autocannon"
+      ],
+      "cost": {
+        "scrap": 480,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 28,
+      "description": "Tactical support bonuses within a radius (bonuses are milestone 02)."
+    },
+    {
+      "id": "bridge_layer",
+      "name": "Bridge Layer",
+      "category": "support",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 4.0,
+      "hp": 180,
+      "armor": "Medium",
+      "vision": 7,
+      "size": 0.55,
+      "weapons": [],
+      "cost": {
+        "scrap": 300,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 20,
+      "description": "Creates temporary crossings (milestone 02)."
+    },
+    {
+      "id": "combat_engineer",
+      "name": "Combat Engineer",
+      "category": "support",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 5.0,
+      "hp": 110,
+      "armor": "Light",
+      "vision": 7,
+      "size": 0.45,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 180,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 14,
+      "description": "Constructs temporary defenses and demolition objectives."
+    },
+    {
+      "id": "rampart_fortress",
+      "name": "Rampart Siege Fortress",
+      "category": "experimental",
+      "chassis": "Rampart",
+      "movementClass": "ground",
+      "speed": 2.0,
+      "hp": 900,
+      "armor": "Fortified",
+      "vision": 8,
+      "size": 1.1,
+      "weapons": [
+        "w_siege_cannon",
+        "w_autocannon"
+      ],
+      "cost": {
+        "scrap": 1800,
+        "power": 3,
+        "components": 4
+      },
+      "buildTime": 90,
+      "description": "Heavily armored walking platform with multiple mounts."
+    },
+    {
+      "id": "titan_breaker",
+      "name": "Titan Breaker",
+      "category": "experimental",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 3.0,
+      "hp": 700,
+      "armor": "Heavy",
+      "vision": 8,
+      "size": 0.9,
+      "weapons": [
+        "w_heavy_cannon",
+        "w_railgun"
+      ],
+      "cost": {
+        "scrap": 1500,
+        "power": 2,
+        "components": 3
+      },
+      "buildTime": 80,
+      "description": "Specialized anti-heavy-mech platform."
+    },
+    {
+      "id": "storm_lance",
+      "name": "Storm Lance",
+      "category": "experimental",
+      "chassis": "Lancer",
+      "movementClass": "ground",
+      "speed": 7.5,
+      "hp": 320,
+      "armor": "Medium",
+      "vision": 9,
+      "size": 0.6,
+      "weapons": [
+        "w_light_railgun"
+      ],
+      "cost": {
+        "scrap": 900,
+        "power": 1,
+        "components": 2
+      },
+      "buildTime": 50,
+      "description": "High-speed experimental assault mech."
+    },
+    {
+      "id": "warden_platform",
+      "name": "Warden Platform",
+      "category": "experimental",
+      "chassis": "Warden",
+      "movementClass": "ground",
+      "speed": 3.5,
+      "hp": 650,
+      "armor": "Heavy",
+      "vision": 10,
+      "size": 0.95,
+      "weapons": [
+        "w_plasma_laser",
+        "w_aa_missile"
+      ],
+      "cost": {
+        "scrap": 1400,
+        "power": 2,
+        "components": 3
+      },
+      "buildTime": 75,
+      "description": "Autonomous heavy combat system."
+    },
+    {
+      "id": "mobile_foundry",
+      "name": "Mobile Foundry",
+      "category": "experimental",
+      "chassis": "Scrapjack",
+      "movementClass": "ground",
+      "speed": 2.5,
+      "hp": 500,
+      "armor": "Heavy",
+      "vision": 7,
+      "size": 0.9,
+      "weapons": [],
+      "cost": {
+        "scrap": 1200,
+        "power": 2,
+        "components": 2
+      },
+      "buildTime": 70,
+      "description": "Slow production vehicle (production is milestone 02)."
+    },
+    {
+      "id": "colossus_engine",
+      "name": "Colossus Artillery Engine",
+      "category": "experimental",
+      "chassis": "Rampart",
+      "movementClass": "ground",
+      "speed": 1.8,
+      "hp": 1000,
+      "armor": "Fortified",
+      "vision": 9,
+      "size": 1.2,
+      "weapons": [
+        "w_siege_cannon",
+        "w_rocket_artillery"
+      ],
+      "cost": {
+        "scrap": 2200,
+        "power": 4,
+        "components": 5
+      },
+      "buildTime": 110,
+      "description": "Extremely expensive siege platform."
+    },
+    {
+      "id": "command_carrier",
+      "name": "Command Carrier",
+      "category": "experimental",
+      "chassis": "Warden",
+      "movementClass": "ground",
+      "speed": 3.0,
+      "hp": 600,
+      "armor": "Heavy",
+      "vision": 9,
+      "size": 0.95,
+      "weapons": [
+        "w_autocannon"
+      ],
+      "cost": {
+        "scrap": 1300,
+        "power": 2,
+        "components": 2
+      },
+      "buildTime": 70,
+      "description": "Mobile command infrastructure."
+    },
+    {
+      "id": "drone_swarm",
+      "name": "Strategic Drone Swarm",
+      "category": "experimental",
+      "chassis": "Vespid",
+      "movementClass": "air",
+      "speed": 8.5,
+      "hp": 140,
+      "armor": "Light",
+      "vision": 9,
+      "size": 0.5,
+      "weapons": [
+        "w_interceptor_gun"
+      ],
+      "cost": {
+        "scrap": 500,
+        "power": 1,
+        "components": 1
+      },
+      "buildTime": 35,
+      "description": "Coordinated disposable units with limited endurance."
+    },
+    {
+      "id": "bastion",
+      "name": "Bastion",
+      "category": "main_battle",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 3.8,
+      "hp": 340,
+      "armor": "Heavy",
+      "vision": 7,
+      "size": 0.65,
+      "weapons": [
+        "w_heavy_cannon"
+      ],
+      "cost": {
+        "scrap": 480,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 28,
+      "description": "Heavy frontline anchor. Holds ground against direct fire. Counter: Demolition Crawler, whose close melee out-damages its cannon cycle."
+    },
+    {
+      "id": "gatekeeper",
+      "name": "Gatekeeper",
+      "category": "main_battle",
+      "chassis": "Bulwark",
+      "movementClass": "ground",
+      "speed": 4.2,
+      "hp": 240,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.6,
+      "weapons": [
+        "w_laser"
+      ],
+      "cost": {
+        "scrap": 380,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 24,
+      "description": "Laser skirmisher that engages ground and air targets alike. Counter: Heavy Tank, whose armour absorbs laser fire while its cannon wins the exchange."
+    },
+    {
+      "id": "deadeye",
+      "name": "Deadeye",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 4.0,
+      "hp": 190,
+      "armor": "Medium",
+      "vision": 10,
+      "size": 0.6,
+      "weapons": [
+        "w_light_railgun"
+      ],
+      "cost": {
+        "scrap": 460,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 26,
+      "description": "Precision fire support. Long reach, blind inside 3 tiles and blind to aircraft. Counter: Medium Tank, which out-trades its railgun at direct-fire range. (Fast Raider was the first counter guess and FAILED duels 0/6: a raider stops at autocannon range and loses the gun trade, so the claim was rewritten to the verified counter.)"
+    },
+    {
+      "id": "mortarjack",
+      "name": "Mortarjack",
+      "category": "artillery",
+      "chassis": "Longshot",
+      "movementClass": "ground",
+      "speed": 4.5,
+      "hp": 150,
+      "armor": "Light",
+      "vision": 8,
+      "size": 0.55,
+      "weapons": [
+        "w_mortar"
+      ],
+      "cost": {
+        "scrap": 340,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 22,
+      "description": "Mobile indirect fire over obstacles. Counter: Lancer Mech, which closes the gap and out-damages it at close range."
+    },
+    {
+      "id": "needlewing",
+      "name": "Needlewing",
+      "category": "recon",
+      "chassis": "Vespid",
+      "movementClass": "ground",
+      "speed": 9.0,
+      "hp": 80,
+      "armor": "Light",
+      "vision": 11,
+      "size": 0.4,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 140,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 10,
+      "description": "Fast scout-striker with strong vision. Counter: Medium Tank, whose cannon removes it in a few hits."
+    },
+    {
+      "id": "longsight",
+      "name": "Longsight",
+      "category": "recon",
+      "chassis": "Vespid",
+      "movementClass": "ground",
+      "speed": 8.0,
+      "hp": 60,
+      "armor": "Light",
+      "vision": 13,
+      "size": 0.4,
+      "weapons": [
+        "w_scout_gun"
+      ],
+      "cost": {
+        "scrap": 140,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 10,
+      "description": "Long-vision spotter for fire support. Fragile in any direct fight. Counter: Fast Raider, which runs it down before it can escape."
+    },
+    {
+      "id": "javelin",
+      "name": "Javelin",
+      "category": "main_battle",
+      "chassis": "Lancer",
+      "movementClass": "ground",
+      "speed": 6.5,
+      "hp": 180,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.55,
+      "weapons": [
+        "w_autocannon"
+      ],
+      "cost": {
+        "scrap": 320,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 22,
+      "description": "Mobile assault mech for flanking and pursuit. Counter: Heavy Tank, which it cannot crack before its cannon answers."
+    },
+    {
+      "id": "raptor",
+      "name": "Raptor",
+      "category": "main_battle",
+      "chassis": "Lancer",
+      "movementClass": "ground",
+      "speed": 7.5,
+      "hp": 170,
+      "armor": "Medium",
+      "vision": 8,
+      "size": 0.55,
+      "weapons": [
+        "w_melee"
+      ],
+      "cost": {
+        "scrap": 300,
+        "power": 0,
+        "components": 0
+      },
+      "buildTime": 20,
+      "description": "Close assault mech built to tear into targets at melee range. Counter: Lancer Mech, which matches it in melee and adds autocannon fire on top."
+    }
+  ],
+  "chassis": [
+    {
+      "id": "Scout",
+      "role": "Recon and harassment",
+      "strength": "Speed and vision",
+      "weakness": "Fragile",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Lancer",
+      "role": "Mobile assault",
+      "strength": "Flanking and pursuit",
+      "weakness": "Limited sustained defense",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Bulwark",
+      "role": "Frontline defense",
+      "strength": "Armor and protection",
+      "weakness": "Slow",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Longshot",
+      "role": "Artillery",
+      "strength": "Extreme range",
+      "weakness": "Vulnerable up close",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Rampart",
+      "role": "Heavy siege",
+      "strength": "Durability and structure damage",
+      "weakness": "High cost",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Vespid",
+      "role": "Fast skirmishing",
+      "strength": "Evasion and rapid movement",
+      "weakness": "Low durability",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Scrapjack",
+      "role": "Modular generalist",
+      "strength": "Salvage-based adaptability",
+      "weakness": "Lower specialized performance",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    },
+    {
+      "id": "Warden",
+      "role": "Autonomous heavy",
+      "strength": "Reliable targeting and coordination",
+      "weakness": "Vulnerable to disruption",
+      "slots": [
+        "primary",
+        "secondary",
+        "armor",
+        "mobility",
+        "reactor",
+        "sensor",
+        "ability"
+      ]
+    }
+  ],
+  "factions": [
+    {
+      "id": "iron_eden",
+      "name": "Iron Eden",
+      "doctrine": "Heavy industry, armor, siege warfare. Durable machines, defensive positions, overwhelming firepower.",
+      "strength": "Strong frontal armor and dependable long-range fire.",
+      "weakness": "Expensive units and slow repositioning.",
+      "color": "#3a86ff",
+      "signatureUnit": "longshot_mech",
+      "roster": [
+        "bastion",
+        "breach_walker",
+        "bulwark_mech",
+        "colossus_engine",
+        "combat_drone",
+        "combat_engineer",
+        "construction_vehicle",
+        "deadeye",
+        "field_repair_mech",
+        "flak_tank",
+        "gatekeeper",
+        "heavy_railgun",
+        "heavy_tank",
+        "interceptor_drone",
+        "lancer_mech",
+        "longshot_mech",
+        "medium_tank",
+        "missile_carrier",
+        "mortar_carrier",
+        "mortarjack",
+        "rampart_fortress",
+        "recovery_crawler",
+        "rocket_battery",
+        "scout_buggy",
+        "siege_cannon",
+        "titan_breaker",
+        "vespid_scout"
+      ]
+    },
+    {
+      "id": "xandria",
+      "name": "Xandria",
+      "doctrine": "Mobility, reconnaissance, precision strikes. Find weaknesses, control movement, destroy vulnerable targets first.",
+      "strength": "Strong reconnaissance and flanking potential.",
+      "weakness": "Lower durability and weaker static defenses.",
+      "color": "#e63946",
+      "signatureUnit": "vespid_scout",
+      "roster": [
+        "bulwark_mech",
+        "combat_drone",
+        "combat_engineer",
+        "construction_vehicle",
+        "ew_mech",
+        "fast_raider",
+        "field_repair_mech",
+        "flak_tank",
+        "gunship",
+        "heavy_tank",
+        "interceptor_drone",
+        "javelin",
+        "lancer_mech",
+        "longshot_mech",
+        "longsight",
+        "medium_tank",
+        "missile_carrier",
+        "needlewing",
+        "radar_scout",
+        "raptor",
+        "recon_aircraft",
+        "recovery_crawler",
+        "rocket_battery",
+        "scout_buggy",
+        "sensor_drone",
+        "siege_cannon",
+        "storm_lance",
+        "vespid_scout"
+      ]
+    },
+    {
+      "id": "salvage_clans",
+      "name": "The Salvage Clans",
+      "doctrine": "Improvisation, wreck recovery, swarm tactics. Turn every battlefield into a resource pool.",
+      "strength": "Better salvage recovery and field repairs.",
+      "weakness": "Less reliable armor, lower baseline accuracy, weaker high-end technology.",
+      "color": "#f4a261",
+      "signatureUnit": "recovery_crawler",
+      "roster": [
+        "bulwark_mech",
+        "combat_drone",
+        "combat_engineer",
+        "construction_vehicle",
+        "demolition_crawler",
+        "drone_swarm",
+        "field_repair_mech",
+        "flak_tank",
+        "heavy_tank",
+        "interceptor_drone",
+        "lancer_mech",
+        "longshot_mech",
+        "medium_tank",
+        "missile_carrier",
+        "mobile_foundry",
+        "recovery_crawler",
+        "repair_scout",
+        "rocket_battery",
+        "salvage_team",
+        "scout_buggy",
+        "shield_projector",
+        "siege_cannon",
+        "supply_carrier",
+        "vespid_scout"
+      ]
+    },
+    {
+      "id": "directorate",
+      "name": "The Directorate",
+      "doctrine": "Automation, production efficiency, networked warfare. Coordinated machines, reliable production.",
+      "strength": "Efficient production and coordinated weapon systems.",
+      "weakness": "Vulnerable to disruption, infrastructure loss, and countermeasures.",
+      "color": "#9b5de5",
+      "signatureUnit": "warden_platform",
+      "roster": [
+        "bridge_layer",
+        "bulwark_mech",
+        "combat_drone",
+        "combat_engineer",
+        "command_carrier",
+        "command_walker",
+        "construction_vehicle",
+        "decoy_drone",
+        "drone_carrier",
+        "ew_skirmisher",
+        "experimental_artillery",
+        "field_repair_mech",
+        "flak_tank",
+        "heavy_tank",
+        "interceptor_drone",
+        "lancer_mech",
+        "longshot_mech",
+        "medium_tank",
+        "missile_carrier",
+        "recovery_crawler",
+        "rocket_artillery_mech",
+        "rocket_battery",
+        "scout_buggy",
+        "siege_cannon",
+        "siege_engineer",
+        "strike_bomber",
+        "transport_aircraft",
+        "vespid_scout",
+        "warden_platform"
+      ]
+    }
+  ],
+  "structures": [
+    {
+      "id": "command_core",
+      "name": "Command Core",
+      "footprint": 2,
+      "hp": 800,
+      "armor": "Fortified",
+      "cost": {
+        "scrap": 0,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Faction command structure. Losing it is elimination in Prototype 01."
+    },
+    {
+      "id": "scrap_extractor",
+      "name": "Scrap Extractor",
+      "footprint": 1,
+      "hp": 220,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 200,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Extracts scrap from resource points (milestone 02)."
+    },
+    {
+      "id": "power_plant",
+      "name": "Power Plant",
+      "footprint": 1,
+      "hp": 260,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 250,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Generates power capacity (milestone 02)."
+    },
+    {
+      "id": "advanced_reactor",
+      "name": "Advanced Reactor",
+      "footprint": 1,
+      "hp": 320,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 500,
+        "power": 0,
+        "components": 1
+      },
+      "description": "Advanced power generation (milestone 02)."
+    },
+    {
+      "id": "light_factory",
+      "name": "Light-Unit Factory",
+      "footprint": 2,
+      "hp": 400,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 400,
+        "power": 1,
+        "components": 0
+      },
+      "description": "Produces light units (milestone 02)."
+    },
+    {
+      "id": "vehicle_factory",
+      "name": "Vehicle Factory",
+      "footprint": 2,
+      "hp": 450,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 500,
+        "power": 1,
+        "components": 0
+      },
+      "description": "Produces vehicles (milestone 02)."
+    },
+    {
+      "id": "mech_bay",
+      "name": "Mech Assembly Bay",
+      "footprint": 2,
+      "hp": 500,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 600,
+        "power": 1,
+        "components": 1
+      },
+      "description": "Produces mechs (milestone 02)."
+    },
+    {
+      "id": "aircraft_hangar",
+      "name": "Aircraft Hangar",
+      "footprint": 2,
+      "hp": 450,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 550,
+        "power": 1,
+        "components": 1
+      },
+      "description": "Produces aircraft (milestone 02)."
+    },
+    {
+      "id": "heavy_plant",
+      "name": "Heavy Industry Plant",
+      "footprint": 3,
+      "hp": 650,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 900,
+        "power": 2,
+        "components": 2
+      },
+      "description": "Produces heavy and experimental units (milestone 02)."
+    },
+    {
+      "id": "research_lab",
+      "name": "Research Laboratory",
+      "footprint": 1,
+      "hp": 300,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 450,
+        "power": 1,
+        "components": 1
+      },
+      "description": "Research (milestone 02)."
+    },
+    {
+      "id": "salvage_processor",
+      "name": "Salvage Processor",
+      "footprint": 1,
+      "hp": 280,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 350,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Processes wrecks into resources (milestone 02)."
+    },
+    {
+      "id": "repair_depot",
+      "name": "Repair Depot",
+      "footprint": 1,
+      "hp": 280,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 300,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Repairs nearby units (milestone 02)."
+    },
+    {
+      "id": "radar_station",
+      "name": "Radar Station",
+      "footprint": 1,
+      "hp": 200,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 280,
+        "power": 1,
+        "components": 0
+      },
+      "description": "Detection (milestone 02)."
+    },
+    {
+      "id": "ammo_depot",
+      "name": "Ammunition Depot",
+      "footprint": 1,
+      "hp": 200,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 200,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Logistics (milestone 02)."
+    },
+    {
+      "id": "logistics_hub",
+      "name": "Logistics Hub",
+      "footprint": 1,
+      "hp": 240,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 320,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Logistics (milestone 02)."
+    },
+    {
+      "id": "experimental_facility",
+      "name": "Experimental Assembly Facility",
+      "footprint": 2,
+      "hp": 550,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 1000,
+        "power": 2,
+        "components": 3
+      },
+      "description": "Experimental production (milestone 02)."
+    },
+    {
+      "id": "light_turret",
+      "name": "Light Turret",
+      "footprint": 1,
+      "hp": 180,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 150,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Light defensive turret (milestone 02)."
+    },
+    {
+      "id": "heavy_turret",
+      "name": "Heavy Cannon Turret",
+      "footprint": 1,
+      "hp": 320,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 350,
+        "power": 1,
+        "components": 0
+      },
+      "description": "Heavy defensive turret (milestone 02)."
+    },
+    {
+      "id": "aa_turret",
+      "name": "Anti-Air Turret",
+      "footprint": 1,
+      "hp": 240,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 300,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Anti-air defensive turret (milestone 02)."
+    },
+    {
+      "id": "missile_turret",
+      "name": "Missile Turret",
+      "footprint": 1,
+      "hp": 280,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 380,
+        "power": 0,
+        "components": 1
+      },
+      "description": "Missile defensive turret (milestone 02)."
+    },
+    {
+      "id": "bunker",
+      "name": "Bunker",
+      "footprint": 1,
+      "hp": 300,
+      "armor": "Fortified",
+      "cost": {
+        "scrap": 250,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Fortified infantry position (milestone 02)."
+    },
+    {
+      "id": "wall",
+      "name": "Wall Segment",
+      "footprint": 1,
+      "hp": 200,
+      "armor": "Fortified",
+      "cost": {
+        "scrap": 80,
+        "power": 0,
+        "components": 0
+      },
+      "description": "Blocks movement and fire lanes (milestone 02)."
+    },
+    {
+      "id": "shield_generator",
+      "name": "Shield Generator",
+      "footprint": 1,
+      "hp": 260,
+      "armor": "Structure",
+      "cost": {
+        "scrap": 420,
+        "power": 1,
+        "components": 1
+      },
+      "description": "Defensive field generator (milestone 02)."
+    }
+  ],
+  "terrain": [
+    {
+      "id": "grass",
+      "name": "Open wasteland / grass",
+      "movementCost": {
+        "ground": 1,
+        "hover": 1,
+        "air": 1
+      },
+      "blocksMovement": {
+        "ground": false,
+        "hover": false,
+        "air": false
+      },
+      "blocksLOS": false
+    },
+    {
+      "id": "dirt",
+      "name": "Broken ground",
+      "movementCost": {
+        "ground": 1,
+        "hover": 1,
+        "air": 1
+      },
+      "blocksMovement": {
+        "ground": false,
+        "hover": false,
+        "air": false
+      },
+      "blocksLOS": false
+    },
+    {
+      "id": "bridge",
+      "name": "Bridge",
+      "movementCost": {
+        "ground": 1,
+        "hover": 1,
+        "air": 1
+      },
+      "blocksMovement": {
+        "ground": false,
+        "hover": false,
+        "air": false
+      },
+      "blocksLOS": false
+    },
+    {
+      "id": "forest",
+      "name": "Overgrown ruins / forest",
+      "movementCost": {
+        "ground": 2,
+        "hover": 1,
+        "air": 1
+      },
+      "blocksMovement": {
+        "ground": false,
+        "hover": false,
+        "air": false
+      },
+      "blocksLOS": false
+    },
+    {
+      "id": "water",
+      "name": "River / water",
+      "movementCost": {
+        "ground": null,
+        "hover": 1,
+        "air": 1
+      },
+      "blocksMovement": {
+        "ground": true,
+        "hover": false,
+        "air": false
+      },
+      "blocksLOS": false
+    },
+    {
+      "id": "rock",
+      "name": "Cliff / rock",
+      "movementCost": {
+        "ground": null,
+        "hover": null,
+        "air": 1
+      },
+      "blocksMovement": {
+        "ground": true,
+        "hover": true,
+        "air": false
+      },
+      "blocksLOS": true
+    }
+  ]
+}

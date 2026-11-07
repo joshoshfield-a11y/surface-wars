@@ -1,0 +1,55 @@
+difficulty status: Difficulty: Easy (red AI behaviour only — same costs, same economy, same unit stats; applies at the next match start)
+match started: third/easy/hero=on status={'scrap': '500', 'blue': '9', 'red': '10', 'wrecks': '0', 'tick': '31', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+opening: attack issued, queued scout_buggy (80), status={'scrap': '420', 'blue': '9', 'red': '10', 'wrecks': '0', 'tick': '165', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 1: queued scout_buggy (80)
+salvage hunt done: gain 0, scrap 340 -> 340, status={'scrap': '340', 'blue': '3', 'red': '16', 'wrecks': '0', 'tick': '1207', 'selected': '0', 'zoom': '1.00', 'mode': 'salvage'}
+cycle 3: queued scout_buggy (80)
+hero phase 1: {"drop_feedback": "Command Mech dropping in near your Command Core.", "controlling": true, "strip_samples": ["HP: 179 / 200 | Weapon range: 6 tiles", "HP: 99 / 200 | Weapon range: 6 tiles", "HP: 99 / 200 | Weapon range: 6 tiles", "HP: 99 / 200 | Weapon range: 6 tiles"], "died_mid_drive": false, "drop_after_release": "Drop ready in 9s", "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."}
+404 unique urls (0): []
+TERMINAL defeat: {'title': 'Defeat — Xandria wins.', 'stats': 'Ticks elapsed: 1666 | Sim time: 83.3s | Winning units remaining: 18 | Wrecks created: 13 | Wrecks still on the field: 2 | Hero XP +45 (level 1 -> 1)'}
+{
+ "tag": "third-easy",
+ "map": "third",
+ "diff": "easy",
+ "hero": "on",
+ "hero_phases": [
+  {
+   "drop_feedback": "Command Mech dropping in near your Command Core.",
+   "controlling": true,
+   "strip_samples": [
+    "HP: 179 / 200 | Weapon range: 6 tiles",
+    "HP: 99 / 200 | Weapon range: 6 tiles",
+    "HP: 99 / 200 | Weapon range: 6 tiles",
+    "HP: 99 / 200 | Weapon range: 6 tiles"
+   ],
+   "died_mid_drive": false,
+   "drop_after_release": "Drop ready in 9s",
+   "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."
+  }
+ ],
+ "cycles": 4,
+ "terminal": {
+  "title": "Defeat \u2014 Xandria wins.",
+  "stats": "Ticks elapsed: 1666 | Sim time: 83.3s | Winning units remaining: 18 | Wrecks created: 13 | Wrecks still on the field: 2 | Hero XP +45 (level 1 -> 1)"
+ },
+ "final_status": {
+  "scrap": "320",
+  "blue": "0",
+  "red": "18",
+  "wrecks": "2",
+  "tick": "1666",
+  "selected": "0",
+  "zoom": "1.00",
+  "mode": "move"
+ },
+ "salvage_windows": [
+  {
+   "hunt_gain": 0,
+   "scrap_before": "340",
+   "scrap_after": "340"
+  }
+ ],
+ "console_errors": [],
+ "console_error_count": 0,
+ "notfound_urls": []
+}

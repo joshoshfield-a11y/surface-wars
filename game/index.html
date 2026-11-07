@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Surface Wars</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="topbar">
+  <strong class="title-full">Surface Wars</strong>
+  <strong class="title-short">Surface Wars</strong>
+  <span id="status"></span>
+  <span class="note">Wired sprite art: sprites-90 units/structures + tiles-overlay terrain + animation wrecks/FX/projectiles/canopy. Canvas silhouettes are fallback only.</span>
+</div>
+<div id="layout">
+<div id="stage">
+  <canvas id="view"></canvas>
+  <canvas id="minimap" width="192" height="120"></canvas>
+  <div id="panels">
+    <div id="info-panel" class="panel" style="display:none"></div>
+    <div id="build-panel" class="panel" style="display:none"></div>
+    <div id="feedback"></div>
+  </div>
+  <div id="rotate-hint"><span>Rotate for the full battlefield view</span><button id="btn-rotate-dismiss">Continue in portrait</button></div>
+</div>
+<div id="side">
+<div id="banner"></div>
+<div id="tutorial-bar" style="display:none"><span id="tutorial-text"></span><button id="tut-skip">Skip</button><button id="tut-next">Next</button></div>
+<div id="commands" class="expanded">
+  <div class="cmd-row cmd-main">
+    <button id="btn-move" class="active">Move</button>
+    <button id="btn-attackmove">Attack-Move</button>
+    <button id="btn-hold">Hold</button>
+    <button id="btn-patrol">Patrol</button>
+    <button id="btn-salvage">Salvage</button>
+    <button id="btn-guard">Guard</button>
+    <button id="btn-take-control" title="Select one unit to take control.">Take Control</button>
+    <button id="btn-drop-back" title="Drop the Command Mech back into the battle.">Drop Back In</button>
+    <button id="btn-queue">Queue: Off</button>
+    <button id="btn-stop">Stop / Deselect</button>
+    <button id="btn-all">Select All</button>
+    <button id="btn-pause">Pause / Menu</button>
+    <button id="btn-menu">Menu</button>
+  </div>
+  <div class="cmd-row cmd-overflow">
+    <span class="dim">View &amp; selection:</span>
+    <button id="btn-paths">Paths: On</button>
+    <button id="btn-minimap">Minimap: On</button>
+    <button id="btn-panmode">Pan: Off</button>
+    <button id="btn-selectmode">Select: Off</button>
+    <button id="btn-addmode">Add Select: Off</button>
+  </div>
+  <button id="btn-cmd-more" class="cmd-more">Fewer commands ▲</button>
+  <div class="cmd-row cmd-extra">
+    <span class="dim">Groups:</span>
+    <button id="btn-group-assign">Assign Group: Off</button>
+    <button id="btn-group-1">1</button>
+    <button id="btn-group-2">2</button>
+    <button id="btn-group-3">3</button>
+    <button id="btn-group-4">4</button>
+    <button id="btn-group-5">5</button>
+    <button id="btn-group-6">6</button>
+    <button id="btn-group-7">7</button>
+    <button id="btn-group-8">8</button>
+    <button id="btn-group-9">9</button>
+    <button id="btn-reset">Reset Map</button>
+    <button id="btn-map-first">First Map</button>
+    <button id="btn-map-second">Second Map</button>
+    <button id="btn-map-third">Third Map</button>
+    <button id="btn-map-test">Test Map</button>
+    <button id="btn-zoom-05">Zoom 0.5×</button>
+    <button id="btn-zoom-1">Zoom 1×</button>
+    <button id="btn-zoom-2">Zoom 2×</button>
+    <button id="btn-zoom-in">Zoom +</button>
+    <button id="btn-zoom-out">Zoom −</button>
+    <button id="btn-zoom-sel">Zoom to Selection</button>
+  </div>
+  <span class="help">Landscape first: rotate your phone for the wide battlefield view, with the map on the left and commands on the right. You play Iron Eden (blue). The top bar shows your current mode, so you always know what a tap will do. Tap a blue unit to select it, then tap ground to move or a red unit to attack. New here? Tap Tutorial on the main menu — it walks you through each move, one step at a time.</span>
+</div>
+<div id="control-strip">
+  <button id="btn-release-control">Release Control</button>
+  <button id="btn-ctl-drop" title="Drop the Command Mech in place of this unit.">Drop Back In</button>
+  <button id="btn-ctl-ability" title="Use the hero's equipped active ability.">Ability</button>
+  <button id="btn-ctl-pause">Pause / Menu</button>
+  <div id="ctl-info"><span id="ctl-hp"></span></div>
+  <span class="dim">Manual control — left stick moves, right stick aims and fires. Landscape recommended. Release Control ends manual control.</span>
+</div>
+</div>
+</div>
+
+<div id="main-menu" class="overlay" style="display:none">
+  <div class="overlay-box">
+    <h1>Surface Wars</h1>
+    <p class="dim">Iron Eden vs Xandria. Strict 90° top-down RTS: menus, groups, patrol, formations, scrap economy, production, salvage, guard orders, rally points, and a red AI economy.</p>
+    <section class="mm-section">
+      <h3>Play</h3>
+      <button id="mm-play-first">Play First Map (80×50)</button>
+      <button id="mm-play-second">Play Second Map — Twin Bridges (80×50)</button>
+      <button id="mm-play-third">Play Third Map — Forest Belt (80×50)</button>
+      <button id="mm-play-test">Play Test Map (64×40)</button>
+    </section>
+    <section class="mm-section">
+      <h3>Difficulty</h3>
+      <p id="mm-diff-status" class="dim">Difficulty: Normal (red AI behaviour only — same costs, same economy, same unit stats; applies at the next match start)</p>
+      <button id="mm-diff-easy">Difficulty: Easy</button>
+      <button id="mm-diff-normal">Difficulty: Normal</button>
+      <button id="mm-diff-hard">Difficulty: Hard</button>
+    </section>
+    <section class="mm-section">
+      <h3>Learn</h3>
+      <button id="mm-tutorial">Tutorial — learn the controls</button>
+      <button id="mm-tutorial2">Tutorial II — Twin-Stick &amp; Hero</button>
+      <button id="mm-howto">How to Play</button>
+    </section>
+    <section class="mm-section">
+      <h3>Customize</h3>
+      <p id="mm-hero-status" class="dim"></p>
+      <p id="mm-hero-notice" class="dim"></p>
+      <button id="mm-loadout">Hero Loadout — Command Mech</button>
+    </section>
+    <section class="mm-section">
+      <h3>Store</h3>
+      <p id="mm-wallet-status" class="dim"></p>
+      <p id="mm-wallet-notice" class="dim"></p>
+      <button id="mm-store">Premium Store — Salvage Credits</button>
+    </section>
+    <section class="mm-section">
+      <h3>Settings</h3>
+      <button id="mm-settings">Settings</button>
+    </section>
+    <p class="dim">New in this version: grouped menus (Play / Difficulty / Learn / Customize / Store / Settings), touch Select mode for drag-select on phones, and a feedback line that always says what your next tap will do — plus Tutorial II, 8 new mechs, mastery, and the Premium Store.</p>
+    <p class="dim">The red side fights with a real combat AI (defends its core, groups up before attacking, falls damaged units back) and runs the same scrap economy as you — no free units, no free scrap.</p>
+  </div>
+</div>
+
+<div id="pause-menu" class="overlay" style="display:none">
+  <div class="overlay-box">
+    <h2>Paused</h2>
+    <p class="dim">The sim is frozen while this menu is open.</p>
+    <section class="mm-section">
+      <h3>Match</h3>
+      <button id="pm-resume">Resume</button>
+      <button id="pm-restart">Restart Map</button>
+    </section>
+    <section class="mm-section">
+      <h3>Switch map</h3>
+      <button id="pm-first">Switch Map: First Map</button>
+      <button id="pm-second">Switch Map: Second Map</button>
+      <button id="pm-third">Switch Map: Third Map</button>
+      <button id="pm-test">Switch Map: Test Map</button>
+    </section>
+    <section class="mm-section">
+      <h3>Options</h3>
+      <button id="pm-settings">Settings</button>
+      <button id="pm-quit">Quit to Main Menu</button>
+    </section>
+    <p class="dim">Esc / Space also resumes.</p>
+  </div>
+</div>
+
+<div id="settings-panel" class="overlay" style="display:none">
+  <div class="overlay-box">
+    <h2>Settings</h2>
+    <p class="dim">Every toggle here actually works. There is no sound toggle because the game has no audio.</p>
+    <label><input type="checkbox" id="set-paths" checked> Unit paths on/off</label>
+    <label><input type="checkbox" id="set-fx" checked> FX / Animation on/off (muzzle, dust, smoke, bob, recoil)</label>
+    <label><input type="checkbox" id="set-shadows" checked> Drop shadows on/off</label>
+    <label><input type="checkbox" id="set-minimap" checked> Minimap on/off</label>
+    <label><input type="checkbox" id="set-hero" checked> Command Mech hero on/off (default on; off restores the original 10v10, no hero)</label>
+    <button id="set-reset">Reset to defaults</button>
+    <button id="set-close">Back</button>
+  </div>
+</div>
+
+<div id="howto-panel" class="overlay" style="display:none">
+  <div class="overlay-box wide">
+    <h2>How to Play</h2>
+    <p>New here? <strong>Tutorial on the main menu</strong> teaches the core moves by doing, one step at a time, with nobody shooting at you. <strong>Tutorial II</strong> teaches twin-stick control and the hero the same way. This page is the quick reference.</p>
+    <h3>Goal</h3>
+    <p>You are Iron Eden (blue). Wipe out every red unit and structure to win. Lose your Command Core and all your units, and you lose.</p>
+    <h3>Select</h3>
+    <p>Tap a blue unit to select it. The top bar shows your current mode, and the feedback line under the map always says what your next tap will do in that mode, so a tap is never a surprise. On a phone, drag pans the camera by default — turn on Select (in the View &amp; selection row) and drag draws a selection box instead. To select many, use Select All, drag-select, or turn on Add Select and tap units one at a time. Double-tap a unit to select all of its type.</p>
+    <h3>Move</h3>
+    <p>With a unit selected, tap open ground to move it. A dashed line shows its path. Ground units cannot cross water — on the First Map the single bridge is the only crossing; on the Second Map (Twin Bridges) there are two bridges across a central lake, plus land routes around its north and south ends.</p>
+    <h3>Attack</h3>
+    <p>Tap a red unit or structure to attack it, in any mode. Attack-Move sends units toward a point and lets them fight anything they meet on the way.</p>
+    <h3>Build</h3>
+    <p>Tap your Command Core to open production. Tap a unit to queue it; scrap is paid at once, and Cancel refunds it in full. New units appear next to the core.</p>
+    <h3>Salvage</h3>
+    <p>Dead units leave wrecks worth scrap (40% of the unit's cost, shrinking over 120 seconds). Select a unit, then tap a wreck to collect it. Wrecks never block movement.</p>
+    <h3>Camera</h3>
+    <p><strong>Landscape first:</strong> rotate your phone for the wide view — map on the left, commands in a side panel on the right, order buttons always visible. In portrait the game still works exactly as before (bottom tray; More commands opens groups, maps, and zoom) and a small pill suggests rotating — tap "Continue in portrait" to dismiss it for the session; it never blocks the map. Drag to pan. Pinch, or the Zoom buttons, to zoom (0.4×–3×). Tap the minimap to jump the camera there, or drag it to pan.</p>
+    <h3>Groups and Queue</h3>
+    <p>Groups: turn on Assign Group, tap a number to save the selection, tap the number again to recall it. Queue: turn on Queue, then tap several points to chain orders; tap Queue again to stop chaining. Patrol loops between two tapped points. Guard defends one point and returns to it after a fight; Hold just stops where a unit stands. Rally (in the core panel) sends new units to a tapped point on spawn.</p>
+    <h3>New units</h3>
+    <p>Your Iron Eden roster adds four mechs, built from the Command Core like any other unit: Bastion (heavy frontline anchor), Gatekeeper (laser skirmisher, ground and air), Deadeye (precision fire support, long reach, blind up close and blind to aircraft), and Mortarjack (mobile indirect fire over obstacles). The red Xandria roster adds four of its own: Needlewing (fast scout-striker), Longsight (long-vision spotter), Javelin (mobile assault for flanking), and Raptor (close assault). Each has a counter in its unit description — read it in the info panel before you build.</p>
+    <h3>Twin-stick control and the hero</h3>
+    <p>Select one armed unit and tap Take Control to drive it yourself: left stick (or WASD) moves, right stick (or mouse aim + hold) aims and fires. Release Control gives the unit a hold order where it stands and keeps it selected. The Command Mech hero starts each match in reserve, so the field opens 9 against 10: tap Drop Back In to drop it near your Command Core, where you immediately control it. Releasing the hero withdraws it to reserve with its HP kept; if it dies on the field, redeploying costs scrap after a cooldown. Tutorial II on the main menu teaches all of this by doing, with the red side held.</p>
+    <h3>Hero mastery</h3>
+    <p>Hero level caps at 10. Past level 10, mastery ranks M1–M5 at 5500, 6800, 8300, 10000, and 11900 total XP each grant one extra skill point at match end. Mastery grants no stats, no gear, and no second ability — it is skill points and prestige only.</p>
+    <h3>Salvage Credits and the Premium Store</h3>
+    <p>Salvage Credits are separate from match scrap and are never converted into it. You earn them only at match end: win 120, draw 60, loss 30, plus 10 per hero killing blow up to 10 kills. Quitting mid-match earns nothing, and a match with the hero toggled off earns nothing. The Premium Store on the main menu sells loadout packs for Salvage Credits only. Real-money purchases: not live — there is no checkout, no real-currency price, and no payment provider. Buying a pack you already own is impossible; a pack never used in a match refunds in full, and a pack used in a match cannot be refunded. Equipping a pack never bypasses the hero's level tier gates.</p>
+    <h3>Not in this slice</h3>
+    <p>Research/tech tree, fog of war, campaign, multiplayer, placing new structures, Power/Components/Supplies layers, Salvage Clans/Directorate factions, transport, and repair. The red side's combat AI defends its core, groups up before attacking, and falls damaged units back to defend — on the same scrap economy as you, with no free units or scrap. Difficulty (Easy / Normal / Hard, on the main menu) changes only that AI behaviour — how soon it attacks, how stubbornly it defends, and how quickly damaged units fall back — never costs, stats, or scrap, and never in a tutorial game. On desktop only: Shift+tap queues, Ctrl+number assigns a group, Esc/Space pauses, +/−/0/F/P are zoom and path keys.</p>
+    <button id="howto-tutorial">Start the Tutorial</button>
+    <button id="howto-tutorial2">Start Tutorial II</button>
+    <button id="howto-close">Back</button>
+  </div>
+</div>
+
+<div id="tutorial-end" class="overlay" style="display:none">
+  <div class="overlay-box">
+    <h2>How to win</h2>
+    <p>You know the moves now: select, move, attack, build, salvage. In a real game the red side fights back, rebuilds, and salvages — so protect your Command Core, spend scrap on units, and grab wrecks before they decay.</p>
+    <p><strong>Win</strong> by wiping out every red unit and structure. <strong>Lose</strong> if your core and all your units are gone. <strong>Draw</strong> if neither side can damage the other and neither side can build new units — the match ends in a draw after 30 seconds in that state, instead of stalling.</p>
+    <button id="tut-play">Play a real game</button>
+    <button id="tut-menu">Back to menu</button>
+  </div>
+</div>
+
+<div id="tutorial2-end" class="overlay" style="display:none">
+  <div class="overlay-box">
+    <h2>Tutorial II — last step</h2>
+    <p>You can drive a unit, aim and fire, release it to a hold order, and drop the Command Mech back in. One step left: look at the Premium Store. It sells loadout packs for earned Salvage Credits only. Viewing only — it costs nothing and buys nothing.</p>
+    <p>Real-money purchases: not live. There is no checkout here.</p>
+    <button id="tut2-store">Open Premium Store</button>
+    <button id="tut2-finish">Finish — back to menu</button>
+    <button id="tut2-play">Play a real game</button>
+  </div>
+</div>
+
+<div id="loadout-panel" class="overlay" style="display:none">
+  <div class="overlay-box wide">
+    <h2>Hero Loadout — Command Mech</h2>
+    <p class="dim">Between matches only: this loadout is fixed for the match once it starts, and cannot be changed mid-match. "Command Mech" is a placeholder name — the final name is not decided yet.</p>
+    <p class="dim">Hero progress is stored only on this device — clearing app data (APK) or browser storage (web) loses it permanently, with no recovery. Progress on the phone does not appear on the laptop, and vice versa.</p>
+    <label>Primary weapon <select id="lo-primary"></select></label>
+    <label>Secondary weapon <select id="lo-secondary"></select></label>
+    <label>Armor gear <select id="lo-armor"></select></label>
+    <label>Mobility gear <select id="lo-mobility"></select></label>
+    <label>Reactor gear <select id="lo-reactor"></select></label>
+    <label>Sensor gear <select id="lo-sensor"></select></label>
+    <label>Equipped active ability <select id="lo-ability"></select></label>
+    <p class="dim">Skills: 1 point each, 1 point per level from level 2. Passive skills are always on once unlocked; the ability slot holds one equipped active skill. Respec is free between matches and returns all spent points. Skill effects and the XP curve are PROPOSED numbers, not playtested balance yet.</p>
+    <div id="lo-skills"></div>
+    <button id="lo-respec">Respec skills (free, between matches only)</button>
+    <p class="dim">Tier 2 weapons and gear unlock at hero level 4, tier 3 at level 7. Higher tiers are shown locked with the level they need — never silently hidden.</p>
+    <p id="lo-errors" class="dim"></p>
+    <p id="lo-summary" class="dim"></p>
+    <button id="lo-save">Save loadout for the next match</button>
+    <button id="lo-close">Back</button>
+  </div>
+</div>
+
+<div id="store-panel" class="overlay" style="display:none">
+  <div class="overlay-box wide">
+    <h2>Premium Store</h2>
+    <p class="dim">Packs are curated hero loadouts, bought with Salvage Credits earned at match end (win 120, draw 60, loss 30, plus 10 per hero killing blow up to 10 kills). Credits are earned in matches only — they are not match scrap, and the two balances are never mixed.</p>
+    <p class="dim">Real-money purchases: not live. There is no checkout, no real-currency price, and no payment provider in this build — everything here is bought with earned Salvage Credits only.</p>
+    <p class="dim">Premium weapons are sidegrades with stated trade-offs, never a stat pile. Owning a pack never bypasses hero level gates: tier 2 items need level 4, tier 3 need level 7. A pack that has never been used in a match can be refunded for its full price; a pack used in a match cannot be refunded. Equipping a pack sets the hero loadout to the pack's loadout for the next match.</p>
+    <p id="store-balance" class="dim"></p>
+    <p id="store-notice" class="dim"></p>
+    <div id="store-packs"></div>
+    <button id="store-close">Back</button>
+  </div>
+</div>
+
+<div id="victory-panel" class="overlay" style="display:none">
+  <div class="overlay-box">
+    <h2 id="victory-title">Victory</h2>
+    <p id="victory-stats"></p>
+    <p class="dim">The game is frozen. Restart the map or return to the main menu.</p>
+    <button id="vic-restart">Restart</button>
+    <button id="vic-menu">Main Menu</button>
+  </div>
+</div>
+
+<script src="catalog.js"></script>
+<script src="sim.js"></script>
+<script src="sprites.js"></script>
+<script src="view.js"></script>
+<script src="animation.js"></script>
+<script src="maps.js"></script>
+<script src="render.js"></script>
+<script src="weapons.js"></script>
+<script src="hero.js"></script>
+<script src="progression.js"></script>
+<script src="currency.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+difficulty status: Difficulty: Normal (red AI behaviour only — same costs, same economy, same unit stats; applies at the next match start)
+match started: first/normal/hero=on status={'scrap': '500', 'blue': '9', 'red': '10', 'wrecks': '0', 'tick': '35', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+production: error Page.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("#build-close")
+    5 × locator resolved to <button id="build-close" class="close-btn">Close panel</button>
+    - attempting click action
+      - waiting for element to be visible, enabled and stable
+    - element was detached from the DOM, retrying
+
+opening: attack issued, queued , status={'scrap': '420', 'blue': '6', 'red': '11', 'wrecks': '3', 'tick': '277', 'selected': '1', 'zoom': '1.00', 'mode': 'move'}
+production: error Page.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("#build-close")
+    6 × locator resolved to <button id="build-close" class="close-btn">Close panel</button>
+    - attempting click action
+      - waiting for element to be visible, enabled and stable
+    - element was detached from the DOM, retrying
+
+production: error Page.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("#build-close")
+    5 × locator resolved to <button id="build-close" class="close-btn">Close panel</button>
+    - attempting click action
+      - waiting for element to be visible, enabled and stable
+    - element was detached from the DOM, retrying
+
+hero phase 1: {"drop_feedback": "Command Mech dropping in near your Command Core.", "controlling": true, "strip_samples": ["HP: 186 / 200 | Weapon range: 6 tiles", "HP: 136 / 200 | Weapon range: 6 tiles", "HP: 111 / 200 | Weapon range: 6 tiles", "HP: 111 / 200 | Weapon range: 6 tiles"], "died_mid_drive": false, "drop_after_release": "Drop ready in 9s", "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."}
+production: build panel did not open after core tap
+404 unique urls (157): ['http://127.0.0.1:8931/assets/sprites-90/units/heavy_tank-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/heavy_tank-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/medium_tank-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/scout_buggy-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/medium_tank-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/scout_buggy-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/bulwark_mech-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/bulwark_mech-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/longshot_mech-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/lancer_mech-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/lancer_mech-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/longshot_mech-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/flak_tank-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/flak_tank-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/structures/command_core-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/dirt_v1-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/grass_v2-512.png', 'http://127.0.0.1:8931/assets/sprites-90/structures/command_core-red-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/grass_v3-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/grass_v1-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/dirt_v2-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/water_plain_v1-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/dirt_v3-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/water_plain_v2-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/forest_floor_v1-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/forest_floor_v2-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/water_plain_v3-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/rocky_ground_v2-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/rocky_ground_v3-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/rocky_ground_v1-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/base/forest_floor_v3-512.png', 'http://127.0.0.1:8931/assets/animation/wrecks/medium_tank_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/wrecks/scout_buggy_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/wrecks/heavy_tank_wreck-512.png', 'http://127.0.0.1:8931/assets/ui-icons/move.png', 'http://127.0.0.1:8931/assets/animation/wrecks/bulwark_mech_wreck-512.png', 'http://127.0.0.1:8931/assets/ui-icons/hold.png', 'http://127.0.0.1:8931/assets/ui-icons/drop-back-in.png', 'http://127.0.0.1:8931/assets/ui-icons/guard.png', 'http://127.0.0.1:8931/assets/ui-icons/patrol.png', 'http://127.0.0.1:8931/assets/ui-icons/salvage.png', 'http://127.0.0.1:8931/assets/ui-icons/attack-move.png', 'http://127.0.0.1:8931/assets/animation/wrecks/lancer_mech_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/wrecks/longshot_mech_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/wrecks/flak_tank_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/command_core_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/turret_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/bunker_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/wall_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/light_factory_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/scrap_extractor_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/power_plant_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/research_lab_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/repair_depot_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/radar_station_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/ammo_depot_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/shield_generator_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/advanced_reactor_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/vehicle_factory_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/aircraft_hangar_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/mech_bay_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/heavy_plant_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/salvage_processor_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/logistics_hub_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/experimental_facility_wreck-512.png', 'http://127.0.0.1:8931/assets/animation/structure-wrecks/rubble-512.png', 'http://127.0.0.1:8931/assets/animation/fx/damage_light-512.png', 'http://127.0.0.1:8931/assets/animation/fx/damage_heavy-512.png', 'http://127.0.0.1:8931/assets/animation/fx/smoke_3-512.png', 'http://127.0.0.1:8931/assets/animation/fx/smoke_2-512.png', 'http://127.0.0.1:8931/assets/animation/fx/smoke_1-512.png', 'http://127.0.0.1:8931/assets/animation/fx/fire_1-512.png', 'http://127.0.0.1:8931/assets/animation/fx/fire_3-512.png', 'http://127.0.0.1:8931/assets/animation/fx/fire_2-512.png', 'http://127.0.0.1:8931/assets/animation/fx/muzzle_1-512.png', 'http://127.0.0.1:8931/assets/animation/fx/muzzle_2-512.png', 'http://127.0.0.1:8931/assets/animation/fx/muzzle_3-512.png', 'http://127.0.0.1:8931/assets/animation/fx/explosion_1-512.png', 'http://127.0.0.1:8931/assets/animation/fx/explosion_2-512.png', 'http://127.0.0.1:8931/assets/animation/fx/explosion_3-512.png', 'http://127.0.0.1:8931/assets/animation/fx/dust_1-512.png', 'http://127.0.0.1:8931/assets/animation/fx/explosion_4-512.png', 'http://127.0.0.1:8931/assets/animation/fx/dust_2-512.png', 'http://127.0.0.1:8931/assets/animation/projectiles/missile-512.png', 'http://127.0.0.1:8931/assets/animation/projectiles/flame-512.png', 'http://127.0.0.1:8931/assets/animation/projectiles/energy_bolt-512.png', 'http://127.0.0.1:8931/assets/animation/projectiles/kinetic_tracer-512.png', 'http://127.0.0.1:8931/assets/animation/canopy/canopy_single-512.png', 'http://127.0.0.1:8931/assets/animation/canopy/canopy_dense-512.png', 'http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_n-512.png', 'http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_s-512.png', 'http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_e-512.png', 'http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_w-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_ne-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/straight_ns-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_se-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/straight_ew-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_sw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_nw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/cross-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_ne-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_se-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/straight_ns-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_sw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/straight_ew-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_nw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/cross-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_ne-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_se-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_nw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/straight_ns-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/straight_ew-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/cross-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_sw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_ne-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_east-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/straight_ns-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_se-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_west-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_nw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/straight_ew-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_south-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_sw-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_north-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/cross-512.png', 'http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_east-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/sensor_drone-red-512.png', 'http://127.0.0.1:8931/assets/animation/wrecks/sensor_drone_wreck-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/combat_drone-red-512.png', 'http://127.0.0.1:8931/assets/sprites-90/units/radar_scout-red-512.png']
+TERMINAL defeat: {'title': 'Defeat — Xandria wins.', 'stats': 'Ticks elapsed: 1604 | Sim time: 80.2s | Winning units remaining: 17 | Wrecks created: 14 | Wrecks still on the field: 2 | Hero XP +75 (level 1 -> 1)'}
+{
+ "tag": "first-normal-v3",
+ "map": "first",
+ "diff": "normal",
+ "hero": "on",
+ "hero_phases": [
+  {
+   "drop_feedback": "Command Mech dropping in near your Command Core.",
+   "controlling": true,
+   "strip_samples": [
+    "HP: 186 / 200 | Weapon range: 6 tiles",
+    "HP: 136 / 200 | Weapon range: 6 tiles",
+    "HP: 111 / 200 | Weapon range: 6 tiles",
+    "HP: 111 / 200 | Weapon range: 6 tiles"
+   ],
+   "died_mid_drive": false,
+   "drop_after_release": "Drop ready in 9s",
+   "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."
+  }
+ ],
+ "cycles": 6,
+ "terminal": {
+  "title": "Defeat \u2014 Xandria wins.",
+  "stats": "Ticks elapsed: 1604 | Sim time: 80.2s | Winning units remaining: 17 | Wrecks created: 14 | Wrecks still on the field: 2 | Hero XP +75 (level 1 -> 1)"
+ },
+ "final_status": {
+  "scrap": "565",
+  "blue": "0",
+  "red": "17",
+  "wrecks": "2",
+  "tick": "1604",
+  "selected": "0",
+  "zoom": "1.00",
+  "mode": "move"
+ },
+ "salvage_windows": [],
+ "console_errors": [
+  "Failed to load resource: the server responded with a status of 404 (File not found)",
+  "Failed to load resource: the server responded with a status of 404 (File not found)",
+  "Failed to load resource: the server responded with a status of 404 (File not found)",
+  "Failed to load resource: the server responded with a status of 404 (File not found)",
+  "Failed to load resource: the server responded with a status of 404 (File not found)"
+ ],
+ "console_error_count": 157,
+ "notfound_urls": [
+  "http://127.0.0.1:8931/assets/sprites-90/units/heavy_tank-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/heavy_tank-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/medium_tank-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/scout_buggy-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/medium_tank-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/scout_buggy-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/bulwark_mech-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/bulwark_mech-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/longshot_mech-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/lancer_mech-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/lancer_mech-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/longshot_mech-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/flak_tank-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/flak_tank-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/structures/command_core-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/dirt_v1-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/grass_v2-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/structures/command_core-red-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/grass_v3-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/grass_v1-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/dirt_v2-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/water_plain_v1-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/dirt_v3-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/water_plain_v2-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/forest_floor_v1-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/forest_floor_v2-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/water_plain_v3-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/rocky_ground_v2-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/rocky_ground_v3-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/rocky_ground_v1-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/base/forest_floor_v3-512.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/medium_tank_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/scout_buggy_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/heavy_tank_wreck-512.png",
+  "http://127.0.0.1:8931/assets/ui-icons/move.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/bulwark_mech_wreck-512.png",
+  "http://127.0.0.1:8931/assets/ui-icons/hold.png",
+  "http://127.0.0.1:8931/assets/ui-icons/drop-back-in.png",
+  "http://127.0.0.1:8931/assets/ui-icons/guard.png",
+  "http://127.0.0.1:8931/assets/ui-icons/patrol.png",
+  "http://127.0.0.1:8931/assets/ui-icons/salvage.png",
+  "http://127.0.0.1:8931/assets/ui-icons/attack-move.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/lancer_mech_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/longshot_mech_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/flak_tank_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/command_core_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/turret_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/bunker_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/wall_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/light_factory_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/scrap_extractor_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/power_plant_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/research_lab_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/repair_depot_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/radar_station_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/ammo_depot_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/shield_generator_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/advanced_reactor_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/vehicle_factory_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/aircraft_hangar_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/mech_bay_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/heavy_plant_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/salvage_processor_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/logistics_hub_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/experimental_facility_wreck-512.png",
+  "http://127.0.0.1:8931/assets/animation/structure-wrecks/rubble-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/damage_light-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/damage_heavy-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/smoke_3-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/smoke_2-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/smoke_1-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/fire_1-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/fire_3-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/fire_2-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/muzzle_1-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/muzzle_2-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/muzzle_3-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/explosion_1-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/explosion_2-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/explosion_3-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/dust_1-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/explosion_4-512.png",
+  "http://127.0.0.1:8931/assets/animation/fx/dust_2-512.png",
+  "http://127.0.0.1:8931/assets/animation/projectiles/missile-512.png",
+  "http://127.0.0.1:8931/assets/animation/projectiles/flame-512.png",
+  "http://127.0.0.1:8931/assets/animation/projectiles/energy_bolt-512.png",
+  "http://127.0.0.1:8931/assets/animation/projectiles/kinetic_tracer-512.png",
+  "http://127.0.0.1:8931/assets/animation/canopy/canopy_single-512.png",
+  "http://127.0.0.1:8931/assets/animation/canopy/canopy_dense-512.png",
+  "http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_n-512.png",
+  "http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_s-512.png",
+  "http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_e-512.png",
+  "http://127.0.0.1:8931/assets/animation/canopy/canopy_edge_w-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_ne-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/straight_ns-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_se-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/end_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/straight_ew-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_sw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/corner_nw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/t_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/bridge_deck/cross-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_ne-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_se-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/straight_ns-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_sw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/straight_ew-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/end_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/corner_nw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/t_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/train_tracks/cross-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_ne-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_se-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/end_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_nw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/straight_ns-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/straight_ew-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/cross-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/t_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/road/corner_sw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_ne-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_east-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/straight_ns-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_se-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/end_west-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_nw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/straight_ew-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_south-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/corner_sw-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_north-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/cross-512.png",
+  "http://127.0.0.1:8931/assets/tiles-overlay/overlays/stepping_stones/t_east-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/sensor_drone-red-512.png",
+  "http://127.0.0.1:8931/assets/animation/wrecks/sensor_drone_wreck-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/combat_drone-red-512.png",
+  "http://127.0.0.1:8931/assets/sprites-90/units/radar_scout-red-512.png"
+ ]
+}

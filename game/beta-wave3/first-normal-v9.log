@@ -1,0 +1,74 @@
+difficulty status: Difficulty: Normal (red AI behaviour only — same costs, same economy, same unit stats; applies at the next match start)
+match started: first/normal/hero=on status={'scrap': '500', 'blue': '9', 'red': '10', 'wrecks': '0', 'tick': '31', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+opening: attack issued, queued scout_buggy (80), scout_buggy (80), scout_buggy (80), status={'scrap': '260', 'blue': '9', 'red': '9', 'wrecks': '2', 'tick': '197', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 1: queued scout_buggy (80)
+cycle 2: no hunt (v8); status={'scrap': '180', 'blue': '5', 'red': '8', 'wrecks': '9', 'tick': '415', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 3: queued scout_buggy (80)
+hero phase 1: {"drop_feedback": "Command Mech dropping in near your Command Core.", "controlling": true, "strip_samples": ["HP: 200 / 200 | Weapon range: 6 tiles", "HP: 200 / 200 | Weapon range: 6 tiles", "HP: 125 / 200 | Weapon range: 6 tiles", "HP: 125 / 200 | Weapon range: 6 tiles", "HP: 75 / 200 | Weapon range: 6 tiles", "HP: 31 / 200 | Weapon range: 6 tiles"], "died_mid_drive": false, "drop_after_release": "Drop ready in 29s", "release_feedback": "Controlled unit destroyed."}
+cycle 5: queued scout_buggy (80), scout_buggy (80), scout_buggy (80)
+cycle 6: no hunt (v8); status={'scrap': '1092', 'blue': '0', 'red': '12', 'wrecks': '8', 'tick': '1187', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 7: queued scout_buggy (80)
+cycle 9: queued scout_buggy (80)
+hero phase 2: {"drop_feedback": "Command Mech dropping in near your Command Core.", "controlling": true, "strip_samples": ["HP: 200 / 200 | Weapon range: 6 tiles", "HP: 200 / 200 | Weapon range: 6 tiles", "HP: 145 / 200 | Weapon range: 6 tiles", "HP: 145 / 200 | Weapon range: 6 tiles", "HP: 145 / 200 | Weapon range: 6 tiles", "HP: 117 / 200 | Weapon range: 6 tiles"], "died_mid_drive": false, "drop_after_release": "Drop ready in 29s", "release_feedback": "Controlled unit destroyed."}
+cycle 10: status={'scrap': '864', 'blue': '1', 'red': '12', 'wrecks': '7', 'tick': '1853', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 10: no hunt (v8); status={'scrap': '864', 'blue': '0', 'red': '12', 'wrecks': '8', 'tick': '1895', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 11: queued scout_buggy (80), scout_buggy (80)
+404 unique urls (0): []
+TERMINAL defeat: {'title': 'Defeat — Xandria wins.', 'stats': 'Ticks elapsed: 2066 | Sim time: 103.3s | Winning units remaining: 13 | Wrecks created: 27 | Wrecks still on the field: 9 | Hero XP +185 (level 1 -> 2)'}
+{
+ "tag": "first-normal-v9",
+ "map": "first",
+ "diff": "normal",
+ "hero": "on",
+ "hero_phases": [
+  {
+   "drop_feedback": "Command Mech dropping in near your Command Core.",
+   "controlling": true,
+   "strip_samples": [
+    "HP: 200 / 200 | Weapon range: 6 tiles",
+    "HP: 200 / 200 | Weapon range: 6 tiles",
+    "HP: 125 / 200 | Weapon range: 6 tiles",
+    "HP: 125 / 200 | Weapon range: 6 tiles",
+    "HP: 75 / 200 | Weapon range: 6 tiles",
+    "HP: 31 / 200 | Weapon range: 6 tiles"
+   ],
+   "died_mid_drive": false,
+   "drop_after_release": "Drop ready in 29s",
+   "release_feedback": "Controlled unit destroyed."
+  },
+  {
+   "drop_feedback": "Command Mech dropping in near your Command Core.",
+   "controlling": true,
+   "strip_samples": [
+    "HP: 200 / 200 | Weapon range: 6 tiles",
+    "HP: 200 / 200 | Weapon range: 6 tiles",
+    "HP: 145 / 200 | Weapon range: 6 tiles",
+    "HP: 145 / 200 | Weapon range: 6 tiles",
+    "HP: 145 / 200 | Weapon range: 6 tiles",
+    "HP: 117 / 200 | Weapon range: 6 tiles"
+   ],
+   "died_mid_drive": false,
+   "drop_after_release": "Drop ready in 29s",
+   "release_feedback": "Controlled unit destroyed."
+  }
+ ],
+ "cycles": 12,
+ "terminal": {
+  "title": "Defeat \u2014 Xandria wins.",
+  "stats": "Ticks elapsed: 2066 | Sim time: 103.3s | Winning units remaining: 13 | Wrecks created: 27 | Wrecks still on the field: 9 | Hero XP +185 (level 1 -> 2)"
+ },
+ "final_status": {
+  "scrap": "864",
+  "blue": "0",
+  "red": "13",
+  "wrecks": "9",
+  "tick": "2066",
+  "selected": "0",
+  "zoom": "1.00",
+  "mode": "move"
+ },
+ "salvage_windows": [],
+ "console_errors": [],
+ "console_error_count": 0,
+ "notfound_urls": []
+}

@@ -1,0 +1,145 @@
+/* Surface Wars — landscape-first layout (Prototype 03 + mobile-first
+   finish + landscape-first pass). The game shell is a flex column
+   filling the viewport (100dvh): compact top bar, then #layout, which
+   is a column in portrait (stage on top, command tray at the bottom)
+   and a row in landscape (stage left, command side panel right).
+   The canvas backing size is set from the stage element in game.js
+   resize(), so the map always fills exactly the space left by the bars. */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #111; color: #eee; font-family: system-ui, sans-serif; overflow: hidden; }
+body { display: flex; flex-direction: column; height: 100vh; height: 100dvh; }
+#layout { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+#side { flex: 0 0 auto; display: flex; flex-direction: column; min-height: 0; }
+#topbar { flex: 0 0 auto; min-height: 40px; display: flex; align-items: center; gap: 10px; padding: 6px 10px; background: #1c1c1c; font-size: 13px; flex-wrap: wrap; }
+#topbar .note { margin-left: auto; color: #ffb; font-size: 12px; }
+.title-short { display: none; }
+#stage { flex: 1 1 auto; min-height: 0; position: relative; overflow: hidden; }
+#view { display: block; touch-action: none; width: 100%; height: 100%; }
+#minimap { position: absolute; top: 8px; right: 8px; width: 160px; height: 100px; border: 2px solid #fff; background: #000; cursor: pointer; touch-action: none; }
+#banner { flex: 0 0 auto; min-height: 22px; line-height: 1.3; padding: 2px 8px; text-align: center; font-weight: bold; color: #ffe066; font-size: 13px; }
+/* Tutorial bar: the persistent "what will my next tap do" banner. It
+   sits above the command tray, so the instruction is visible while
+   the player looks at the map and the buttons at the same time. */
+#tutorial-bar { flex: 0 0 auto; display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: #3a2f00; border-top: 2px solid #ffe066; font-size: 14px; line-height: 1.35; }
+#tutorial-text { flex: 1 1 auto; color: #ffe066; font-weight: bold; }
+#tutorial-bar button { flex: 0 0 auto; }
+#commands { flex: 0 0 auto; display: flex; flex-direction: column; gap: 8px; padding: 8px 10px; background: #1c1c1c; max-height: 46vh; overflow-y: auto; }
+/* v1.8 menu sections: grouping only — every button keeps its id and
+   handler, and every entry stays on the same screen (no extra taps). */
+.mm-section { display: flex; flex-direction: column; gap: 12px; }
+.mm-section h3 { margin: 6px 0 0; font-size: 15px; color: #ffe066; }
+/* v1.8 overflow row: view & selection toggles live here, always
+   visible — never behind the More commands toggle — so the primary
+   order row stays short and nothing costs an extra tap. */
+.cmd-overflow { border-top: 1px solid #444; padding-top: 8px; }
+.cmd-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+#commands:not(.expanded) .cmd-extra { display: none; }
+.cmd-more { width: 100%; text-align: center; }
+button { background: #333; color: #f2f2f2; border: 1px solid #666; min-height: 44px; padding: 10px 12px; font-size: 15px; border-radius: 6px; cursor: pointer; }
+/* Wave-2: order-button icons supplement (never replace) the text label. */
+.cmd-icon { width: 18px; height: 18px; vertical-align: middle; margin-right: 6px; border-radius: 3px; }
+button:active { background: #555; }
+button.active { background: #2a5da8; border-color: #7ab0ff; }
+button:disabled { opacity: 0.45; cursor: default; }
+.help { font-size: 12px; color: #bbb; }
+/* Prototype 02 overlays + panels */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.72); align-items: center; justify-content: center; z-index: 50; padding: 12px; }
+.overlay-box { background: #202020; border: 1px solid #777; border-radius: 8px; padding: 22px; width: min(520px, 100%); display: flex; flex-direction: column; gap: 12px; max-height: 92dvh; overflow-y: auto; }
+.overlay-box.wide { width: min(720px, 100%); }
+.overlay-box h1, .overlay-box h2, .overlay-box h3 { margin: 4px 0; }
+.overlay-box label { display: block; font-size: 15px; }
+.overlay-box button { text-align: left; }
+.overlay-box input[type="checkbox"] { width: 22px; height: 22px; vertical-align: middle; }
+.dim { color: #bbb; font-size: 13px; }
+#panels { position: absolute; left: 8px; right: 8px; bottom: 8px; display: flex; flex-direction: column; gap: 8px; max-width: 360px; z-index: 10; pointer-events: none; }
+/* v1.8: the strip itself must not eat map taps — only the panels do.
+   Before this, the 18 px feedback strip at the bottom-left sat over
+   the canvas (and inside the left twin-stick zone) and swallowed
+   every tap/stick touch that landed on it. Panel buttons keep working
+   via pointer-events on .panel; the feedback line passes through. */
+#panels .panel { pointer-events: auto; }
+.panel { background: rgba(20,20,20,0.92); border: 1px solid #666; border-radius: 6px; padding: 10px 12px; font-size: 13px; line-height: 1.5; max-height: 46vh; overflow-y: auto; }
+.panel .build-btn { display: block; width: 100%; text-align: left; margin: 3px 0; }
+.panel .queue { margin-top: 8px; border-top: 1px solid #444; padding-top: 6px; }
+.panel .cancel-btn { margin-left: 6px; }
+.panel .close-btn { display: block; width: 100%; margin-top: 8px; }
+#feedback { color: #ff9a9a; font-size: 13px; font-weight: bold; min-height: 18px; }
+
+/* Rotate hint (portrait only): a small pill, top-left of the stage,
+   clear of the top-right minimap. It must NEVER block map taps: the
+   pill itself ignores pointer events, only its dismiss button takes
+   them. JS hides it for the rest of the session once dismissed
+   (sessionStorage), and it is never shown in landscape at all. */
+#rotate-hint { display: none; position: absolute; top: 8px; left: 8px; max-width: calc(100% - 160px); align-items: center; gap: 8px; padding: 6px 10px; background: rgba(20,20,20,0.9); border: 1px solid #ffe066; border-radius: 6px; font-size: 13px; color: #ffe066; z-index: 15; pointer-events: none; }
+#rotate-hint button { pointer-events: auto; flex: 0 0 auto; }
+@media (orientation: portrait) {
+  #rotate-hint { display: flex; }
+}
+#rotate-hint.rotate-hidden { display: none !important; }
+
+/* Landscape-first: wide layout. The order row stays at the top of
+   the side panel (always visible — never behind the More toggle, which
+   is hidden in landscape and the extra row is forced visible). The
+   side panel scrolls as a whole, so no button is ever cut off by the
+   short (~390 px) landscape height. Panels scroll within the viewport
+   and stay dismissible; the minimap grows to 192x120. */
+@media (orientation: landscape) {
+  #layout { flex-direction: row; }
+  #stage { flex: 1 1 auto; }
+  #side { flex: 0 0 300px; width: 300px; overflow-y: auto; border-left: 1px solid #444; }
+  #commands { max-height: none; overflow: visible; }
+  /* Higher specificity than the portrait collapse rule
+     (#commands:not(.expanded) .cmd-extra), so the extra row is
+     genuinely visible in landscape even when the tray is collapsed. */
+  #side #commands:not(.expanded) .cmd-extra { display: flex; }
+  #btn-cmd-more { display: none; }
+  #minimap { width: 192px; height: 120px; }
+  #panels { max-width: 340px; }
+  .panel { max-height: 64vh; }
+  #tutorial-bar { font-size: 13px; }
+  /* Landscape height is scarce: drop the sprite note (it lives in
+     How to Play) and shrink the bar, so the stage gets ~40 px back
+     instead of losing a third of the height to a wrapped top bar. */
+  #topbar { min-height: 36px; font-size: 12px; }
+  #topbar .note { display: none; }
+}
+
+/* Twin-Stick Phase A: while controlling, the command tray is replaced
+   by the control strip (Release Control + HP/range note), the rotate
+   hint is suppressed (it would sit on a stick zone), and the minimap
+   stays visible as a display only (taps are ignored in game.js). */
+#control-strip { display: none; }
+body.controlling #commands { display: none; }
+body.controlling #control-strip { display: flex; flex-direction: column; gap: 8px; padding: 8px 10px; background: #1c1c1c; }
+body.controlling #rotate-hint { display: none !important; }
+/* Twin-Stick Phase B: loadout selects are full-width, thumb-height,
+   and readable in the overlay. Errors are red, never silent. */
+#loadout-panel label { display: block; }
+#loadout-panel select { display: block; width: 100%; min-height: 44px; font-size: 15px; background: #333; color: #eee; border: 1px solid #666; border-radius: 6px; margin: 4px 0 12px; }
+#lo-errors { color: #ff9a9a; font-weight: bold; }
+/* WAVE 4: store pack cards + notice. Same overlay language as the
+   loadout screen: full-width buttons, red notice text, never a
+   dead button (every pack always shows Buy, Equip, or Equipped). */
+#store-packs > div { border: 1px solid #555; border-radius: 6px; padding: 12px; }
+#store-packs h3 { margin: 2px 0; }
+#store-packs p { margin: 6px 0; }
+#store-notice { color: #ff9a9a; font-weight: bold; }
+#ctl-info { font-size: 13px; font-weight: bold; color: #ffe066; }
+
+/* Phone (<= 640px): compact top bar, hidden note/help, finger-size minimap. */
+@media (max-width: 640px) {
+  .title-full { display: none; }
+  .title-short { display: inline; font-size: 15px; }
+  #topbar .note { display: none; }
+  #topbar { font-size: 12px; }
+  .help { display: none; }
+  #minimap { width: 132px; height: 83px; }
+  #commands { max-height: 48vh; }
+  .overlay-box { padding: 16px; }
+}
+
+/* Desktop (> 640px): wider panels, roomier top bar. */
+@media (min-width: 641px) {
+  #topbar { font-size: 14px; }
+  #commands { max-height: 34vh; }
+}

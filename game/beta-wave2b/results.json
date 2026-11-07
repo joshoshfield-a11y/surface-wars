@@ -1,0 +1,247 @@
+{
+  "results": {
+    "menu-visible": {
+      "ok": true,
+      "detail": "Difficulty: Normal (red AI behaviour only \u2014 same costs, same economy, same unit stats; applies at the next match start)"
+    },
+    "difficulty-easy": {
+      "ok": true,
+      "detail": "Difficulty: Easy (red AI behaviour only \u2014 same costs, same economy, same unit stats; applies at the next match start)"
+    },
+    "difficulty-normal": {
+      "ok": true,
+      "detail": "Difficulty: Normal (red AI behaviour only \u2014 same costs, same economy, same unit stats; applies at the next match start)"
+    },
+    "difficulty-hard": {
+      "ok": true,
+      "detail": "Difficulty: Hard (red AI behaviour only \u2014 same costs, same economy, same unit stats; applies at the next match start)"
+    },
+    "tut-starts-step1": {
+      "ok": true,
+      "detail": "Tutorial 1 of 7 \u2014 Look around: Drag the ground to pan, or tap Zoom + to zoom in. Next tap: drag to pan, or tap a Zoom button."
+    },
+    "tut-step1-look-via-zoom": {
+      "ok": true,
+      "detail": "Tutorial 2 of 7 \u2014 Select a unit: Tap a blue unit to select it. Next tap: tap a blue unit."
+    },
+    "tut-step2-select": {
+      "ok": true,
+      "detail": "Tutorial 3 of 7 \u2014 Move: Tap open ground to move your selected unit. A dashed line shows its path. Next tap: tap open ground to move. || Map: First Map 80x50 | Scrap: 500 | Iron Eden units: 10 | Xandria units: 11 | Wrecks: 1 | Tick: 105 | Selected: 1 | Mode: move | Zoom: 1.25"
+    },
+    "tut-step3-move": {
+      "ok": true,
+      "detail": "Tutorial 4 of 7 \u2014 Attack: Tap the pulsing red target to attack it. It cannot shoot back. Next tap: tap the red target."
+    },
+    "tut-step4-attack": {
+      "ok": true,
+      "detail": "Tutorial 5 of 7 \u2014 Build: Tap your Command Core, then tap Scout Buggy to build one. Next tap: tap your Command Core. (Tap the pulsing Command Core.)"
+    },
+    "tut-step5-build-panel": {
+      "ok": true,
+      "detail": "Command Core \u2014 Production\nClose panel\n\nOnly units with zero Power and zero Components cost are producible until those layers exist.\nRally: none \u2014 new units idle next to the core.\nSet Rally\n\nQueue is e"
+    },
+    "tut-build-queue-progress-live": {
+      "ok": true,
+      "detail": "q1=Command Core \u2014 Production\nClose panel\n\nOnly units with zero Power and zero Components cost are producible until those layers exist.\nRally: none \u2014 new  q2=Command Core \u2014 Production\nClose panel\n\nOnly units with zero Power and zero Components cost are producible until those layers exist.\nRally: none \u2014 new "
+    },
+    "tut-step6-salvage-after-build": {
+      "ok": true,
+      "detail": "Tutorial 6 of 7 \u2014 Salvage: Select a unit, then tap the pulsing wreck to collect its scrap. It starts at 32 scrap and shrinks over 120 seconds. Next tap: tap a blue unit, then the wreck. (No unit selected \u2014 tap a blue unit first.)"
+    },
+    "tut-wreck-refresh-browser": {
+      "ok": false,
+      "detail": "Wreck: Scout Buggy\nFaction: xandria\nSalvage value now: 31 scrap (started at 32, decays to 0 over 120s)\nTime left: 119s\nWrecks do not block movement and cannot fight.\nSelect one of your units, then tap this wreck to salvage it.\n\nClose panel"
+    },
+    "tut-salvage-by-doing": {
+      "ok": true,
+      "detail": "sel=True tut=Tutorial 6 of 7 \u2014 Salvage: Select a unit, then tap the pulsing wreck to collect its scrap. It starts at 32 scrap and shrinks over 120 seconds. Next tap: tap a blue unit, then the wreck."
+    },
+    "tut-win-screen": {
+      "ok": true,
+      "detail": "How to win\n\nYou know the moves now: select, move, attack, build, salvage. In a real game the red side fights back, rebuilds, and salvages \u2014 so protect your Command Core, spend scrap on units, and grab"
+    },
+    "tut-play-real-game-9v10": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 500 | Iron Eden units: 9 | Xandria units: 10 | Wrecks: 0 | Tick: 29 | Selected: 0 | Mode: move | Zoom: 1.00"
+    },
+    "twinstick-enter": {
+      "ok": true,
+      "detail": "strip_visible=True banner=Manual control \u2014 left stick moves, right stick aims and fires. Release Control returns to RTS orders."
+    },
+    "twinstick-drive-fire-no-crash": {
+      "ok": true,
+      "detail": "canvas_changed=True"
+    },
+    "twinstick-esc-release": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 500 | Iron Eden units: 9 | Xandria units: 9 | Wrecks: 2 | Tick: 236 | Selected: 1 | Mode: move | Zoom: 1.00"
+    },
+    "twinstick-structure-no-take-control": {
+      "ok": true,
+      "detail": "Command Core (iron_eden)\nHP: 800 / 800 \u00a0 Armour: Fortified\nRole: Faction command structure. Losing it is elimination.\n\nClose panel"
+    },
+    "rally-feedback": {
+      "ok": true,
+      "detail": "Rally set at (15.0, 25.0). New units will move there on spawn. || panel: Command Core \u2014 Production\nClose panel\n\nOnly units with zero Power and zero Components cost are producible until those layers exist.\nRally: (15.0, 25.0) \u2014 new units move there on spawn.\nSet Rally\n\nQueu"
+    },
+    "rally-panel-refresh": {
+      "ok": true,
+      "detail": "Command Core \u2014 Production\nClose panel\n\nOnly units with zero Power and zero Components cost are producible until those layers exist.\nRally: (15.0, 25.0) \u2014 new units move there on spawn.\nSet Rally\n\nQueu"
+    },
+    "zoom-minus-x10-clamp-0.40": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 500 | Iron Eden units: 5 | Xandria units: 8 | Wrecks: 9 | Tick: 606 | Selected: 1 | Mode: move | Zoom: 0.40"
+    },
+    "zoom-1x-reset": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 500 | Iron Eden units: 4 | Xandria units: 9 | Wrecks: 10 | Tick: 692 | Selected: 1 | Mode: move | Zoom: 1.00"
+    },
+    "pause-freezes-sim": {
+      "ok": false,
+      "detail": "tick 694 -> 700 (paused)"
+    },
+    "resume-advances": {
+      "ok": true,
+      "detail": "tick 700 -> 744"
+    },
+    "hero-loadout-summary": {
+      "ok": true,
+      "detail": "Level 1 | HP 200 | Speed 6 | Vision 8 | Weapons: Twin-Bore Autogun"
+    },
+    "hero-drop-button-visible": {
+      "ok": true,
+      "detail": "Drop Back In"
+    },
+    "hero-drop-telegraph": {
+      "ok": true,
+      "detail": "Command Mech dropping in near your Command Core."
+    },
+    "hero-drop-lands-controlled": {
+      "ok": true,
+      "detail": "strip=HP: 200 / 200 | Weapon range: 6 tiles banner=Command Mech on the field \u2014 left stick moves, right stick aims and fires. Release Control withdraws it to reserve."
+    },
+    "hero-drive-fire": {
+      "ok": true,
+      "detail": "HP: 200 / 200 | Weapon range: 6 tiles"
+    },
+    "hero-release-withdraw": {
+      "ok": true,
+      "detail": "Command Mech withdrawn to reserve. Drop Back In when ready. || drop=Drop ready in 10s"
+    },
+    "hero-cooldown-label": {
+      "ok": true,
+      "detail": "Drop ready in 10s"
+    },
+    "hero-redrop-ready": {
+      "ok": true,
+      "detail": "Drop Back In"
+    },
+    "hero-redrop-same-hp": {
+      "ok": true,
+      "detail": "before=HP: 200 / 200 | Weapon range: 6 tiles after=HP: 200 / 200 | Weapon range: 6 tiles"
+    },
+    "hero-death-in-browser": {
+      "ok": true,
+      "detail": "feedback=Controlled unit destroyed. drop=Drop ready in 28s after 30s"
+    },
+    "hero-death-cooldown-30s": {
+      "ok": true,
+      "detail": "Drop ready in 27s"
+    },
+    "hero-redeploy-scrap-check": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 893 | Iron Eden units: 4 | Xandria units: 9 | Wrecks: 9 | Tick: 1817 | Selected: 0 | Mode: move | Zoom: 1.00"
+    },
+    "hero-redeploy-after-death": {
+      "ok": true,
+      "detail": "HP: 200 / 200 | Weapon range: 6 tiles"
+    },
+    "map-second-quit": {
+      "ok": true,
+      "detail": ""
+    },
+    "map-second-start": {
+      "ok": true,
+      "detail": "Map: Second Map \u2014 Twin Bridges 80x50 | Scrap: 500 | Iron Eden units: 9 | Xandria units: 10 | Wrecks: 0 | Tick: 34 | Selected: 0 | Mode: move | Zoom: 1.00"
+    },
+    "map-third-quit": {
+      "ok": true,
+      "detail": ""
+    },
+    "map-third-start": {
+      "ok": true,
+      "detail": "Map: Third Map \u2014 Forest Belt 80x50 | Scrap: 500 | Iron Eden units: 9 | Xandria units: 10 | Wrecks: 0 | Tick: 32 | Selected: 0 | Mode: move | Zoom: 1.00"
+    },
+    "victory-queue-built": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 40 | Iron Eden units: 6 | Xandria units: 6 | Wrecks: 16 | Tick: 1128 | Selected: 1 | Mode: move | Zoom: 1.00"
+    },
+    "victory-attack-ordered": {
+      "ok": true,
+      "detail": "Map: First Map 80x50 | Scrap: 40 | Iron Eden units: 6 | Xandria units: 6 | Wrecks: 16 | Tick: 1196 | Selected: 6 | Mode: attackMove | Zoom: 1.00"
+    },
+    "victory-panel-browser": {
+      "ok": true,
+      "detail": "title=Defeat \u2014 Xandria wins. stats=Ticks elapsed: 2479 | Sim time: 123.9s | Winning units remaining: 5 | Wrecks created: 26 | Wrecks still on the field: 17 | Hero XP +25 (level 1 -> 1)"
+    },
+    "progression-menu-after-win": {
+      "ok": true,
+      "detail": "hero_status=Command Mech \u2014 Level 1 | 25 XP | 0 skill points unspent | 1 matches, 0 wins notice="
+    },
+    "progression-loadout-after-win": {
+      "ok": true,
+      "detail": "Level 1 | HP 200 | Speed 6 | Vision 8 | Weapons: Twin-Bore Autogun || skills=Dash (active, needs level 2) \u2014 Burst of speed: 2x speed for 0.4s, cooldown 8s. No invulnerability. (PROPOSED) [Locked: needs hero level 2]\n\nSalvage Sense (passive, needs level 3) \u2014 Wrecks the hero salvages are worth +25% scrap (hero's salvages only). (PROPOSED) [Locked: needs hero level 3]\n\nOverdriv"
+    },
+    "defeat-panel-browser": {
+      "ok": true,
+      "detail": "title=Defeat \u2014 Xandria wins. stats=Ticks elapsed: 1492 | Sim time: 74.6s | Winning units remaining: 17 | Wrecks created: 10 | Wrecks still on the field: 1 | Hero XP +25 (level 1 -> 1)"
+    },
+    "draw-panel-browser": {
+      "ok": false,
+      "detail": "title=Defeat \u2014 Xandria wins. stats=Ticks elapsed: 1241 | Sim time: 62.0s | Winning units remaining: 9 | Wrecks created: 16 | Wrecks still on the field: 16 | Hero XP +25 (level 1 -> 1) status=Map: Second Map \u2014 Twin Bridges 80x50 | Scrap: 500 | Iron Eden units: 0 | Xandria units: 9 | Wrecks: 16 | Tick: 1241 | Selected: 0 | Mode: attackMove | Zoom: 1.00"
+    },
+    "corruption-reset-notice": {
+      "ok": true,
+      "detail": "notice=Hero progress could not be read, so it was reset to level 1. status=Command Mech \u2014 Level 1 | 0 XP | 0 skill points unspent | 0 matches, 0 wins"
+    },
+    "portrait-390x844-layout": {
+      "ok": true,
+      "detail": "{'overflowX': 0, 'canvas': [390, 443], 'stage': [390, 443], 'canvasBacking': [390, 443], 'minBtn': 44, 'nBtn': 16}"
+    },
+    "portrait-tray-toggle": {
+      "ok": true,
+      "detail": "expanded False->True canvas/stage=[390, 358, 390, 358]"
+    },
+    "landscape-844x390-layout": {
+      "ok": true,
+      "detail": "{'overflowX': 0, 'canvas': [544, 311], 'stage': [544, 311], 'minBtn': 44, 'nBtn': 38, 'trayBtnDisplay': 'none'}"
+    },
+    "landscape-844x390-minimap-off": {
+      "ok": true,
+      "detail": "none"
+    },
+    "touch-stick-enter": {
+      "ok": true,
+      "detail": ""
+    },
+    "touch-stick-drive": {
+      "ok": true,
+      "detail": "multi-touch dispatched, still controlling"
+    },
+    "landscape-932x430-layout": {
+      "ok": true,
+      "detail": "{'overflowX': 0, 'canvas': [632, 370], 'stage': [632, 370], 'minBtn': 44, 'nBtn': 38, 'trayBtnDisplay': 'none'}"
+    },
+    "landscape-932x430-minimap-off": {
+      "ok": true,
+      "detail": "none"
+    }
+  },
+  "console": [
+    [
+      "desktop-menu",
+      "error",
+      "Failed to load resource: the server responded with a status of 404 (File not found)"
+    ]
+  ]
+}

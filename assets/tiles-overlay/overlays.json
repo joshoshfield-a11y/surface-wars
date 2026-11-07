@@ -1,0 +1,1012 @@
+{
+  "train_tracks": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  },
+  "road": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  },
+  "dirt_path": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  },
+  "stepping_stones": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  },
+  "cracks": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    },
+    "scatter_1": {
+      "file": "scatter_1.png",
+      "mask": 0,
+      "dirs": [],
+      "note": "scattered, no neighbours needed"
+    },
+    "scatter_2": {
+      "file": "scatter_2.png",
+      "mask": 0,
+      "dirs": [],
+      "note": "scattered, no neighbours needed"
+    },
+    "scatter_3": {
+      "file": "scatter_3.png",
+      "mask": 0,
+      "dirs": [],
+      "note": "scattered, no neighbours needed"
+    }
+  },
+  "wires_cables": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  },
+  "pipes": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  },
+  "bridge_deck": {
+    "straight_ns": {
+      "file": "straight_ns.png",
+      "mask": 5,
+      "dirs": [
+        "N",
+        "S"
+      ]
+    },
+    "straight_ew": {
+      "file": "straight_ew.png",
+      "mask": 10,
+      "dirs": [
+        "E",
+        "W"
+      ]
+    },
+    "corner_ne": {
+      "file": "corner_ne.png",
+      "mask": 3,
+      "dirs": [
+        "N",
+        "E"
+      ]
+    },
+    "corner_nw": {
+      "file": "corner_nw.png",
+      "mask": 9,
+      "dirs": [
+        "N",
+        "W"
+      ]
+    },
+    "corner_se": {
+      "file": "corner_se.png",
+      "mask": 6,
+      "dirs": [
+        "E",
+        "S"
+      ]
+    },
+    "corner_sw": {
+      "file": "corner_sw.png",
+      "mask": 12,
+      "dirs": [
+        "S",
+        "W"
+      ]
+    },
+    "t_north": {
+      "file": "t_north.png",
+      "mask": 14,
+      "dirs": [
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "t_south": {
+      "file": "t_south.png",
+      "mask": 11,
+      "dirs": [
+        "N",
+        "E",
+        "W"
+      ]
+    },
+    "t_east": {
+      "file": "t_east.png",
+      "mask": 13,
+      "dirs": [
+        "N",
+        "S",
+        "W"
+      ]
+    },
+    "t_west": {
+      "file": "t_west.png",
+      "mask": 7,
+      "dirs": [
+        "N",
+        "E",
+        "S"
+      ]
+    },
+    "cross": {
+      "file": "cross.png",
+      "mask": 15,
+      "dirs": [
+        "N",
+        "E",
+        "S",
+        "W"
+      ]
+    },
+    "end_north": {
+      "file": "end_north.png",
+      "mask": 1,
+      "dirs": [
+        "N"
+      ]
+    },
+    "end_south": {
+      "file": "end_south.png",
+      "mask": 4,
+      "dirs": [
+        "S"
+      ]
+    },
+    "end_east": {
+      "file": "end_east.png",
+      "mask": 2,
+      "dirs": [
+        "E"
+      ]
+    },
+    "end_west": {
+      "file": "end_west.png",
+      "mask": 8,
+      "dirs": [
+        "W"
+      ]
+    }
+  }
+}

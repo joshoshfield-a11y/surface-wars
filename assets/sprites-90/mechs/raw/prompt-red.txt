@@ -1,0 +1,1 @@
+Same strict flat 90-degree top-down grid prompt as prompt-blue.txt, with BRIGHT RED team-colour accents on every vehicle (large red glowing center markings, red trim, red lights) instead of blue. All barrels straight up, fully inside cells, no bipeds, no text, no grid lines, pure black background, 4x2: Scout, Lancer, Bulwark, Longshot / Rampart, Vespid, Scrapjack, Warden.

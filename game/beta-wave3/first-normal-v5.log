@@ -1,0 +1,71 @@
+difficulty status: Difficulty: Normal (red AI behaviour only — same costs, same economy, same unit stats; applies at the next match start)
+match started: first/normal/hero=on status={'scrap': '500', 'blue': '9', 'red': '10', 'wrecks': '0', 'tick': '29', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+opening: attack issued, queued scout_buggy (80), status={'scrap': '420', 'blue': '8', 'red': '10', 'wrecks': '1', 'tick': '169', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 1: queued scout_buggy (80)
+cycle 3: queued scout_buggy (80)
+hero phase 1: {"drop_feedback": "Command Mech dropping in near your Command Core.", "controlling": true, "strip_samples": ["HP: 200 / 200 | Weapon range: 6 tiles", "HP: 200 / 200 | Weapon range: 6 tiles", "HP: 175 / 200 | Weapon range: 6 tiles", "HP: 150 / 200 | Weapon range: 6 tiles"], "died_mid_drive": false, "drop_after_release": "Drop ready in 9s", "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."}
+cycle 5: queued scout_buggy (80)
+hero phase 2: {"drop_feedback": "Command Mech dropping in near your Command Core.", "controlling": true, "strip_samples": ["HP: 150 / 200 | Weapon range: 6 tiles", "HP: 125 / 200 | Weapon range: 6 tiles", "HP: 125 / 200 | Weapon range: 6 tiles", "HP: 125 / 200 | Weapon range: 6 tiles"], "died_mid_drive": false, "drop_after_release": "Drop ready in 9s", "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."}
+cycle 6: salvage sweep at (41,25), scrap before=455
+salvage window done: scrap 455 -> 455, status={'scrap': '455', 'blue': '0', 'red': '17', 'wrecks': '5', 'tick': '1548', 'selected': '0', 'zoom': '1.00', 'mode': 'salvage'}
+404 unique urls (0): []
+TERMINAL defeat: {'title': 'Defeat — Xandria wins.', 'stats': 'Ticks elapsed: 1548 | Sim time: 77.4s | Winning units remaining: 17 | Wrecks created: 15 | Wrecks still on the field: 5 | Hero XP +55 (level 1 -> 1)'}
+{
+ "tag": "first-normal-v5",
+ "map": "first",
+ "diff": "normal",
+ "hero": "on",
+ "hero_phases": [
+  {
+   "drop_feedback": "Command Mech dropping in near your Command Core.",
+   "controlling": true,
+   "strip_samples": [
+    "HP: 200 / 200 | Weapon range: 6 tiles",
+    "HP: 200 / 200 | Weapon range: 6 tiles",
+    "HP: 175 / 200 | Weapon range: 6 tiles",
+    "HP: 150 / 200 | Weapon range: 6 tiles"
+   ],
+   "died_mid_drive": false,
+   "drop_after_release": "Drop ready in 9s",
+   "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."
+  },
+  {
+   "drop_feedback": "Command Mech dropping in near your Command Core.",
+   "controlling": true,
+   "strip_samples": [
+    "HP: 150 / 200 | Weapon range: 6 tiles",
+    "HP: 125 / 200 | Weapon range: 6 tiles",
+    "HP: 125 / 200 | Weapon range: 6 tiles",
+    "HP: 125 / 200 | Weapon range: 6 tiles"
+   ],
+   "died_mid_drive": false,
+   "drop_after_release": "Drop ready in 9s",
+   "release_feedback": "Command Mech withdrawn to reserve. Drop Back In when ready."
+  }
+ ],
+ "cycles": 7,
+ "terminal": {
+  "title": "Defeat \u2014 Xandria wins.",
+  "stats": "Ticks elapsed: 1548 | Sim time: 77.4s | Winning units remaining: 17 | Wrecks created: 15 | Wrecks still on the field: 5 | Hero XP +55 (level 1 -> 1)"
+ },
+ "final_status": {
+  "scrap": "455",
+  "blue": "0",
+  "red": "17",
+  "wrecks": "5",
+  "tick": "1548",
+  "selected": "0",
+  "zoom": "1.00",
+  "mode": "salvage"
+ },
+ "salvage_windows": [
+  {
+   "tile": 41,
+   "scrap_before": "455",
+   "scrap_after": "455"
+  }
+ ],
+ "console_errors": [],
+ "console_error_count": 0,
+ "notfound_urls": []
+}

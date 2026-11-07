@@ -1,0 +1,345 @@
+[
+ [
+  "scout_buggy",
+  "Scout Buggy",
+  0.4,
+  "Scout",
+  "ground"
+ ],
+ [
+  "vespid_scout",
+  "Vespid Scout",
+  0.4,
+  "Vespid",
+  "ground"
+ ],
+ [
+  "combat_drone",
+  "Combat Drone",
+  0.35,
+  "Scout",
+  "air"
+ ],
+ [
+  "radar_scout",
+  "Radar Scout",
+  0.4,
+  "Scout",
+  "ground"
+ ],
+ [
+  "salvage_team",
+  "Salvage Team",
+  0.35,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "repair_scout",
+  "Repair Scout",
+  0.4,
+  "Scout",
+  "ground"
+ ],
+ [
+  "sensor_drone",
+  "Sensor Drone",
+  0.3,
+  "Scout",
+  "air"
+ ],
+ [
+  "ew_skirmisher",
+  "EW Skirmisher",
+  0.4,
+  "Vespid",
+  "ground"
+ ],
+ [
+  "fast_raider",
+  "Fast Raider",
+  0.4,
+  "Lancer",
+  "ground"
+ ],
+ [
+  "decoy_drone",
+  "Decoy Drone",
+  0.3,
+  "Scout",
+  "air"
+ ],
+ [
+  "medium_tank",
+  "Medium Tank",
+  0.6,
+  "Bulwark",
+  "ground"
+ ],
+ [
+  "heavy_tank",
+  "Heavy Tank",
+  0.7,
+  "Bulwark",
+  "ground"
+ ],
+ [
+  "bulwark_mech",
+  "Bulwark Mech",
+  0.65,
+  "Bulwark",
+  "ground"
+ ],
+ [
+  "lancer_mech",
+  "Lancer Mech",
+  0.55,
+  "Lancer",
+  "ground"
+ ],
+ [
+  "siege_cannon",
+  "Siege Cannon",
+  0.6,
+  "Longshot",
+  "ground"
+ ],
+ [
+  "longshot_mech",
+  "Longshot Artillery Mech",
+  0.6,
+  "Longshot",
+  "ground"
+ ],
+ [
+  "rocket_battery",
+  "Rocket Battery",
+  0.6,
+  "Longshot",
+  "ground"
+ ],
+ [
+  "breach_walker",
+  "Breach Walker",
+  0.7,
+  "Rampart",
+  "ground"
+ ],
+ [
+  "mortar_carrier",
+  "Mortar Carrier",
+  0.55,
+  "Scout",
+  "ground"
+ ],
+ [
+  "heavy_railgun",
+  "Heavy Railgun Platform",
+  0.7,
+  "Longshot",
+  "ground"
+ ],
+ [
+  "rocket_artillery_mech",
+  "Rocket Artillery Mech",
+  0.6,
+  "Longshot",
+  "ground"
+ ],
+ [
+  "siege_engineer",
+  "Siege Engineer",
+  0.5,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "demolition_crawler",
+  "Demolition Crawler",
+  0.65,
+  "Rampart",
+  "ground"
+ ],
+ [
+  "experimental_artillery",
+  "Experimental Artillery",
+  0.8,
+  "Longshot",
+  "ground"
+ ],
+ [
+  "interceptor_drone",
+  "Interceptor Drone",
+  0.35,
+  "Vespid",
+  "air"
+ ],
+ [
+  "flak_tank",
+  "Flak Tank",
+  0.6,
+  "Bulwark",
+  "ground"
+ ],
+ [
+  "missile_carrier",
+  "Missile Carrier",
+  0.55,
+  "Scout",
+  "ground"
+ ],
+ [
+  "gunship",
+  "Gunship",
+  0.55,
+  "Lancer",
+  "air"
+ ],
+ [
+  "strike_bomber",
+  "Strike Bomber",
+  0.6,
+  "Lancer",
+  "air"
+ ],
+ [
+  "transport_aircraft",
+  "Transport Aircraft",
+  0.6,
+  "Scout",
+  "air"
+ ],
+ [
+  "drone_carrier",
+  "Drone Carrier",
+  0.8,
+  "Warden",
+  "air"
+ ],
+ [
+  "recon_aircraft",
+  "Recon Aircraft",
+  0.4,
+  "Vespid",
+  "air"
+ ],
+ [
+  "construction_vehicle",
+  "Construction Vehicle",
+  0.55,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "field_repair_mech",
+  "Field Repair Mech",
+  0.55,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "recovery_crawler",
+  "Recovery Crawler",
+  0.55,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "supply_carrier",
+  "Supply Carrier",
+  0.5,
+  "Scout",
+  "ground"
+ ],
+ [
+  "shield_projector",
+  "Shield Projector",
+  0.6,
+  "Warden",
+  "ground"
+ ],
+ [
+  "ew_mech",
+  "Electronic Warfare Mech",
+  0.5,
+  "Vespid",
+  "ground"
+ ],
+ [
+  "command_walker",
+  "Command Walker",
+  0.65,
+  "Warden",
+  "ground"
+ ],
+ [
+  "bridge_layer",
+  "Bridge Layer",
+  0.55,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "combat_engineer",
+  "Combat Engineer",
+  0.45,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "rampart_fortress",
+  "Rampart Siege Fortress",
+  1.1,
+  "Rampart",
+  "ground"
+ ],
+ [
+  "titan_breaker",
+  "Titan Breaker",
+  0.9,
+  "Bulwark",
+  "ground"
+ ],
+ [
+  "storm_lance",
+  "Storm Lance",
+  0.6,
+  "Lancer",
+  "ground"
+ ],
+ [
+  "warden_platform",
+  "Warden Platform",
+  0.95,
+  "Warden",
+  "ground"
+ ],
+ [
+  "mobile_foundry",
+  "Mobile Foundry",
+  0.9,
+  "Scrapjack",
+  "ground"
+ ],
+ [
+  "colossus_engine",
+  "Colossus Artillery Engine",
+  1.2,
+  "Rampart",
+  "ground"
+ ],
+ [
+  "command_carrier",
+  "Command Carrier",
+  0.95,
+  "Warden",
+  "ground"
+ ],
+ [
+  "drone_swarm",
+  "Strategic Drone Swarm",
+  0.5,
+  "Vespid",
+  "air"
+ ]
+]

@@ -1,0 +1,90 @@
+difficulty status: Difficulty: Normal (red AI behaviour only — same costs, same economy, same unit stats; applies at the next match start)
+match started: first/normal/hero=on status={'scrap': '500', 'blue': '9', 'red': '10', 'wrecks': '0', 'tick': '29', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+opening: attack issued, queued scout_buggy (80), status={'scrap': '420', 'blue': '7', 'red': '11', 'wrecks': '2', 'tick': '308', 'selected': '0', 'zoom': '1.00', 'mode': 'move'}
+cycle 1: queued scout_buggy (80)
+production: error Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(".build-btn[data-type='scout_buggy']")
+    - locator resolved to <button class="build-btn" data-type="scout_buggy">Scout Buggy — 80 scrap — 8s</button>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is not stable
+  - retrying click action
+    3 × waiting for element to be visible, enabled and stable
+    - element was detached from the DOM, retrying
+      - locator resolved to <button class="build-btn" data-type="scout_buggy">Scout Buggy — 80 scrap — 8s</button>
+    - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+  22 × element was detached from the DOM, retrying
+       - locator resolved to <button class="build-btn" data-type="scout_buggy">Scout Buggy — 80 scrap — 8s</button>
+     - attempting click action
+       - waiting for element to be visible, enabled and stable
+    2 × element is not stable
+    - retrying click action
+      - waiting for element to be visible, enabled and stable
+    - element was detached from the DOM, retrying
+      - locator resolved to <button class="build-btn" data-type="scout_buggy">Scout Buggy — 80 scrap — 8s</button>
+    - attempting click action
+      - waiting for element to be visible, enabled and stable
+    - element was detached from the DOM, retrying
+      - locator resolved to <button class="build-btn" data-type="scout_buggy">Scout Buggy — 80 scrap — 8s</button>
+    - attempting click action
+      - waiting for element to be visible, enabled and stable
+  - element was detached from the DOM, retrying
+
+production: build panel did not open after core tap
+cycle 6: action error (terminal? True): Page.click: Timeout 3000ms exceeded.
+Call log:
+  - waiting for locator("#btn-salvage")
+    - locator resolved to <button id="btn-salvage">…</button>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="overlay" id="victory-panel">…</div> intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+    - <div class="overlay" id="victory-panel">…</div> intercepts pointer events
+  - retrying click action
+    - waiting 100ms
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+    - done scrolling
+
+404 unique urls (0): []
+TERMINAL defeat: {'title': 'Defeat — Xandria wins.', 'stats': 'Ticks elapsed: 1696 | Sim time: 84.8s | Winning units remaining: 17 | Wrecks created: 14 | Wrecks still on the field: 4 | Hero XP +25 (level 1 -> 1)'}
+{
+ "tag": "first-normal-v4",
+ "map": "first",
+ "diff": "normal",
+ "hero": "on",
+ "hero_phases": [],
+ "cycles": 6,
+ "terminal": {
+  "title": "Defeat \u2014 Xandria wins.",
+  "stats": "Ticks elapsed: 1696 | Sim time: 84.8s | Winning units remaining: 17 | Wrecks created: 14 | Wrecks still on the field: 4 | Hero XP +25 (level 1 -> 1)"
+ },
+ "final_status": {
+  "scrap": "340",
+  "blue": "0",
+  "red": "17",
+  "wrecks": "4",
+  "tick": "1696",
+  "selected": "0",
+  "zoom": "1.00",
+  "mode": "move"
+ },
+ "salvage_windows": [],
+ "console_errors": [],
+ "console_error_count": 0,
+ "notfound_urls": []
+}

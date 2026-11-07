@@ -1,0 +1,471 @@
+{
+ "version": 1,
+ "scope": "animation set only (wrecks/fx/projectiles/canopy). Older sets are indexed by path in ALL-SPRITES-INDEX.md, not copied here.",
+ "counts": {
+  "wrecks": 49,
+  "fx": 15,
+  "projectiles": 4,
+  "canopy": 6,
+  "animation_distinct": 74,
+  "animation_files_incl_512": 148
+ },
+ "sheets": {
+  "wrecks": "assets/animation/wrecks-sheet.png",
+  "fx": "assets/animation/fx-sheet.png",
+  "projectiles": "assets/animation/projectiles-sheet.png",
+  "canopy": "assets/animation/canopy-sheet.png"
+ },
+ "wrecks": {
+  "scout_buggy": {
+   "file": "assets/animation/wrecks/scout_buggy_wreck.png",
+   "file_512": "assets/animation/wrecks/scout_buggy_wreck-512.png",
+   "unit": "Scout Buggy",
+   "catalog_size": 0.4
+  },
+  "vespid_scout": {
+   "file": "assets/animation/wrecks/vespid_scout_wreck.png",
+   "file_512": "assets/animation/wrecks/vespid_scout_wreck-512.png",
+   "unit": "Vespid Scout",
+   "catalog_size": 0.4
+  },
+  "combat_drone": {
+   "file": "assets/animation/wrecks/combat_drone_wreck.png",
+   "file_512": "assets/animation/wrecks/combat_drone_wreck-512.png",
+   "unit": "Combat Drone",
+   "catalog_size": 0.35
+  },
+  "radar_scout": {
+   "file": "assets/animation/wrecks/radar_scout_wreck.png",
+   "file_512": "assets/animation/wrecks/radar_scout_wreck-512.png",
+   "unit": "Radar Scout",
+   "catalog_size": 0.4
+  },
+  "salvage_team": {
+   "file": "assets/animation/wrecks/salvage_team_wreck.png",
+   "file_512": "assets/animation/wrecks/salvage_team_wreck-512.png",
+   "unit": "Salvage Team",
+   "catalog_size": 0.35
+  },
+  "repair_scout": {
+   "file": "assets/animation/wrecks/repair_scout_wreck.png",
+   "file_512": "assets/animation/wrecks/repair_scout_wreck-512.png",
+   "unit": "Repair Scout",
+   "catalog_size": 0.4
+  },
+  "sensor_drone": {
+   "file": "assets/animation/wrecks/sensor_drone_wreck.png",
+   "file_512": "assets/animation/wrecks/sensor_drone_wreck-512.png",
+   "unit": "Sensor Drone",
+   "catalog_size": 0.3
+  },
+  "ew_skirmisher": {
+   "file": "assets/animation/wrecks/ew_skirmisher_wreck.png",
+   "file_512": "assets/animation/wrecks/ew_skirmisher_wreck-512.png",
+   "unit": "EW Skirmisher",
+   "catalog_size": 0.4
+  },
+  "fast_raider": {
+   "file": "assets/animation/wrecks/fast_raider_wreck.png",
+   "file_512": "assets/animation/wrecks/fast_raider_wreck-512.png",
+   "unit": "Fast Raider",
+   "catalog_size": 0.4
+  },
+  "decoy_drone": {
+   "file": "assets/animation/wrecks/decoy_drone_wreck.png",
+   "file_512": "assets/animation/wrecks/decoy_drone_wreck-512.png",
+   "unit": "Decoy Drone",
+   "catalog_size": 0.3
+  },
+  "medium_tank": {
+   "file": "assets/animation/wrecks/medium_tank_wreck.png",
+   "file_512": "assets/animation/wrecks/medium_tank_wreck-512.png",
+   "unit": "Medium Tank",
+   "catalog_size": 0.6
+  },
+  "heavy_tank": {
+   "file": "assets/animation/wrecks/heavy_tank_wreck.png",
+   "file_512": "assets/animation/wrecks/heavy_tank_wreck-512.png",
+   "unit": "Heavy Tank",
+   "catalog_size": 0.7
+  },
+  "bulwark_mech": {
+   "file": "assets/animation/wrecks/bulwark_mech_wreck.png",
+   "file_512": "assets/animation/wrecks/bulwark_mech_wreck-512.png",
+   "unit": "Bulwark Mech",
+   "catalog_size": 0.65
+  },
+  "lancer_mech": {
+   "file": "assets/animation/wrecks/lancer_mech_wreck.png",
+   "file_512": "assets/animation/wrecks/lancer_mech_wreck-512.png",
+   "unit": "Lancer Mech",
+   "catalog_size": 0.55
+  },
+  "siege_cannon": {
+   "file": "assets/animation/wrecks/siege_cannon_wreck.png",
+   "file_512": "assets/animation/wrecks/siege_cannon_wreck-512.png",
+   "unit": "Siege Cannon",
+   "catalog_size": 0.6
+  },
+  "longshot_mech": {
+   "file": "assets/animation/wrecks/longshot_mech_wreck.png",
+   "file_512": "assets/animation/wrecks/longshot_mech_wreck-512.png",
+   "unit": "Longshot Artillery Mech",
+   "catalog_size": 0.6
+  },
+  "rocket_battery": {
+   "file": "assets/animation/wrecks/rocket_battery_wreck.png",
+   "file_512": "assets/animation/wrecks/rocket_battery_wreck-512.png",
+   "unit": "Rocket Battery",
+   "catalog_size": 0.6
+  },
+  "breach_walker": {
+   "file": "assets/animation/wrecks/breach_walker_wreck.png",
+   "file_512": "assets/animation/wrecks/breach_walker_wreck-512.png",
+   "unit": "Breach Walker",
+   "catalog_size": 0.7
+  },
+  "mortar_carrier": {
+   "file": "assets/animation/wrecks/mortar_carrier_wreck.png",
+   "file_512": "assets/animation/wrecks/mortar_carrier_wreck-512.png",
+   "unit": "Mortar Carrier",
+   "catalog_size": 0.55
+  },
+  "heavy_railgun": {
+   "file": "assets/animation/wrecks/heavy_railgun_wreck.png",
+   "file_512": "assets/animation/wrecks/heavy_railgun_wreck-512.png",
+   "unit": "Heavy Railgun Platform",
+   "catalog_size": 0.7
+  },
+  "rocket_artillery_mech": {
+   "file": "assets/animation/wrecks/rocket_artillery_mech_wreck.png",
+   "file_512": "assets/animation/wrecks/rocket_artillery_mech_wreck-512.png",
+   "unit": "Rocket Artillery Mech",
+   "catalog_size": 0.6
+  },
+  "siege_engineer": {
+   "file": "assets/animation/wrecks/siege_engineer_wreck.png",
+   "file_512": "assets/animation/wrecks/siege_engineer_wreck-512.png",
+   "unit": "Siege Engineer",
+   "catalog_size": 0.5
+  },
+  "demolition_crawler": {
+   "file": "assets/animation/wrecks/demolition_crawler_wreck.png",
+   "file_512": "assets/animation/wrecks/demolition_crawler_wreck-512.png",
+   "unit": "Demolition Crawler",
+   "catalog_size": 0.65
+  },
+  "experimental_artillery": {
+   "file": "assets/animation/wrecks/experimental_artillery_wreck.png",
+   "file_512": "assets/animation/wrecks/experimental_artillery_wreck-512.png",
+   "unit": "Experimental Artillery",
+   "catalog_size": 0.8
+  },
+  "interceptor_drone": {
+   "file": "assets/animation/wrecks/interceptor_drone_wreck.png",
+   "file_512": "assets/animation/wrecks/interceptor_drone_wreck-512.png",
+   "unit": "Interceptor Drone",
+   "catalog_size": 0.35
+  },
+  "flak_tank": {
+   "file": "assets/animation/wrecks/flak_tank_wreck.png",
+   "file_512": "assets/animation/wrecks/flak_tank_wreck-512.png",
+   "unit": "Flak Tank",
+   "catalog_size": 0.6
+  },
+  "missile_carrier": {
+   "file": "assets/animation/wrecks/missile_carrier_wreck.png",
+   "file_512": "assets/animation/wrecks/missile_carrier_wreck-512.png",
+   "unit": "Missile Carrier",
+   "catalog_size": 0.55
+  },
+  "gunship": {
+   "file": "assets/animation/wrecks/gunship_wreck.png",
+   "file_512": "assets/animation/wrecks/gunship_wreck-512.png",
+   "unit": "Gunship",
+   "catalog_size": 0.55
+  },
+  "strike_bomber": {
+   "file": "assets/animation/wrecks/strike_bomber_wreck.png",
+   "file_512": "assets/animation/wrecks/strike_bomber_wreck-512.png",
+   "unit": "Strike Bomber",
+   "catalog_size": 0.6
+  },
+  "transport_aircraft": {
+   "file": "assets/animation/wrecks/transport_aircraft_wreck.png",
+   "file_512": "assets/animation/wrecks/transport_aircraft_wreck-512.png",
+   "unit": "Transport Aircraft",
+   "catalog_size": 0.6
+  },
+  "drone_carrier": {
+   "file": "assets/animation/wrecks/drone_carrier_wreck.png",
+   "file_512": "assets/animation/wrecks/drone_carrier_wreck-512.png",
+   "unit": "Drone Carrier",
+   "catalog_size": 0.8
+  },
+  "recon_aircraft": {
+   "file": "assets/animation/wrecks/recon_aircraft_wreck.png",
+   "file_512": "assets/animation/wrecks/recon_aircraft_wreck-512.png",
+   "unit": "Recon Aircraft",
+   "catalog_size": 0.4
+  },
+  "construction_vehicle": {
+   "file": "assets/animation/wrecks/construction_vehicle_wreck.png",
+   "file_512": "assets/animation/wrecks/construction_vehicle_wreck-512.png",
+   "unit": "Construction Vehicle",
+   "catalog_size": 0.55
+  },
+  "field_repair_mech": {
+   "file": "assets/animation/wrecks/field_repair_mech_wreck.png",
+   "file_512": "assets/animation/wrecks/field_repair_mech_wreck-512.png",
+   "unit": "Field Repair Mech",
+   "catalog_size": 0.55
+  },
+  "recovery_crawler": {
+   "file": "assets/animation/wrecks/recovery_crawler_wreck.png",
+   "file_512": "assets/animation/wrecks/recovery_crawler_wreck-512.png",
+   "unit": "Recovery Crawler",
+   "catalog_size": 0.55
+  },
+  "supply_carrier": {
+   "file": "assets/animation/wrecks/supply_carrier_wreck.png",
+   "file_512": "assets/animation/wrecks/supply_carrier_wreck-512.png",
+   "unit": "Supply Carrier",
+   "catalog_size": 0.5
+  },
+  "shield_projector": {
+   "file": "assets/animation/wrecks/shield_projector_wreck.png",
+   "file_512": "assets/animation/wrecks/shield_projector_wreck-512.png",
+   "unit": "Shield Projector",
+   "catalog_size": 0.6
+  },
+  "ew_mech": {
+   "file": "assets/animation/wrecks/ew_mech_wreck.png",
+   "file_512": "assets/animation/wrecks/ew_mech_wreck-512.png",
+   "unit": "Electronic Warfare Mech",
+   "catalog_size": 0.5
+  },
+  "command_walker": {
+   "file": "assets/animation/wrecks/command_walker_wreck.png",
+   "file_512": "assets/animation/wrecks/command_walker_wreck-512.png",
+   "unit": "Command Walker",
+   "catalog_size": 0.65
+  },
+  "bridge_layer": {
+   "file": "assets/animation/wrecks/bridge_layer_wreck.png",
+   "file_512": "assets/animation/wrecks/bridge_layer_wreck-512.png",
+   "unit": "Bridge Layer",
+   "catalog_size": 0.55
+  },
+  "combat_engineer": {
+   "file": "assets/animation/wrecks/combat_engineer_wreck.png",
+   "file_512": "assets/animation/wrecks/combat_engineer_wreck-512.png",
+   "unit": "Combat Engineer",
+   "catalog_size": 0.45
+  },
+  "rampart_fortress": {
+   "file": "assets/animation/wrecks/rampart_fortress_wreck.png",
+   "file_512": "assets/animation/wrecks/rampart_fortress_wreck-512.png",
+   "unit": "Rampart Siege Fortress",
+   "catalog_size": 1.1
+  },
+  "titan_breaker": {
+   "file": "assets/animation/wrecks/titan_breaker_wreck.png",
+   "file_512": "assets/animation/wrecks/titan_breaker_wreck-512.png",
+   "unit": "Titan Breaker",
+   "catalog_size": 0.9
+  },
+  "storm_lance": {
+   "file": "assets/animation/wrecks/storm_lance_wreck.png",
+   "file_512": "assets/animation/wrecks/storm_lance_wreck-512.png",
+   "unit": "Storm Lance",
+   "catalog_size": 0.6
+  },
+  "warden_platform": {
+   "file": "assets/animation/wrecks/warden_platform_wreck.png",
+   "file_512": "assets/animation/wrecks/warden_platform_wreck-512.png",
+   "unit": "Warden Platform",
+   "catalog_size": 0.95
+  },
+  "mobile_foundry": {
+   "file": "assets/animation/wrecks/mobile_foundry_wreck.png",
+   "file_512": "assets/animation/wrecks/mobile_foundry_wreck-512.png",
+   "unit": "Mobile Foundry",
+   "catalog_size": 0.9
+  },
+  "colossus_engine": {
+   "file": "assets/animation/wrecks/colossus_engine_wreck.png",
+   "file_512": "assets/animation/wrecks/colossus_engine_wreck-512.png",
+   "unit": "Colossus Artillery Engine",
+   "catalog_size": 1.2
+  },
+  "command_carrier": {
+   "file": "assets/animation/wrecks/command_carrier_wreck.png",
+   "file_512": "assets/animation/wrecks/command_carrier_wreck-512.png",
+   "unit": "Command Carrier",
+   "catalog_size": 0.95
+  },
+  "drone_swarm": {
+   "file": "assets/animation/wrecks/drone_swarm_wreck.png",
+   "file_512": "assets/animation/wrecks/drone_swarm_wreck-512.png",
+   "unit": "Strategic Drone Swarm",
+   "catalog_size": 0.5
+  }
+ },
+ "fx": {
+  "smoke_1": {
+   "frames": "smoke",
+   "file": "assets/animation/fx/smoke_1.png",
+   "file_512": "assets/animation/fx/smoke_1-512.png"
+  },
+  "smoke_2": {
+   "frames": "smoke",
+   "file": "assets/animation/fx/smoke_2.png",
+   "file_512": "assets/animation/fx/smoke_2-512.png"
+  },
+  "smoke_3": {
+   "frames": "smoke",
+   "file": "assets/animation/fx/smoke_3.png",
+   "file_512": "assets/animation/fx/smoke_3-512.png"
+  },
+  "fire_1": {
+   "frames": "fire",
+   "file": "assets/animation/fx/fire_1.png",
+   "file_512": "assets/animation/fx/fire_1-512.png"
+  },
+  "fire_2": {
+   "frames": "fire",
+   "file": "assets/animation/fx/fire_2.png",
+   "file_512": "assets/animation/fx/fire_2-512.png"
+  },
+  "fire_3": {
+   "frames": "fire",
+   "file": "assets/animation/fx/fire_3.png",
+   "file_512": "assets/animation/fx/fire_3-512.png"
+  },
+  "muzzle_1": {
+   "frames": "muzzle",
+   "file": "assets/animation/fx/muzzle_1.png",
+   "file_512": "assets/animation/fx/muzzle_1-512.png"
+  },
+  "muzzle_2": {
+   "frames": "muzzle",
+   "file": "assets/animation/fx/muzzle_2.png",
+   "file_512": "assets/animation/fx/muzzle_2-512.png"
+  },
+  "muzzle_3": {
+   "frames": "muzzle",
+   "file": "assets/animation/fx/muzzle_3.png",
+   "file_512": "assets/animation/fx/muzzle_3-512.png"
+  },
+  "explosion_1": {
+   "frames": "explosion",
+   "file": "assets/animation/fx/explosion_1.png",
+   "file_512": "assets/animation/fx/explosion_1-512.png"
+  },
+  "explosion_2": {
+   "frames": "explosion",
+   "file": "assets/animation/fx/explosion_2.png",
+   "file_512": "assets/animation/fx/explosion_2-512.png"
+  },
+  "explosion_3": {
+   "frames": "explosion",
+   "file": "assets/animation/fx/explosion_3.png",
+   "file_512": "assets/animation/fx/explosion_3-512.png"
+  },
+  "explosion_4": {
+   "frames": "explosion",
+   "file": "assets/animation/fx/explosion_4.png",
+   "file_512": "assets/animation/fx/explosion_4-512.png"
+  },
+  "dust_1": {
+   "frames": "dust",
+   "file": "assets/animation/fx/dust_1.png",
+   "file_512": "assets/animation/fx/dust_1-512.png"
+  },
+  "dust_2": {
+   "frames": "dust",
+   "file": "assets/animation/fx/dust_2.png",
+   "file_512": "assets/animation/fx/dust_2-512.png"
+  }
+ },
+ "fx_groups": {
+  "smoke": [
+   "smoke_1",
+   "smoke_2",
+   "smoke_3"
+  ],
+  "fire": [
+   "fire_1",
+   "fire_2",
+   "fire_3"
+  ],
+  "muzzle": [
+   "muzzle_1",
+   "muzzle_2",
+   "muzzle_3"
+  ],
+  "explosion": [
+   "explosion_1",
+   "explosion_2",
+   "explosion_3",
+   "explosion_4"
+  ],
+  "dust": [
+   "dust_1",
+   "dust_2"
+  ]
+ },
+ "projectiles": {
+  "kinetic_tracer": {
+   "file": "assets/animation/projectiles/kinetic_tracer.png",
+   "file_512": "assets/animation/projectiles/kinetic_tracer-512.png",
+   "orientation": "nose-up"
+  },
+  "missile": {
+   "file": "assets/animation/projectiles/missile.png",
+   "file_512": "assets/animation/projectiles/missile-512.png",
+   "orientation": "nose-up"
+  },
+  "energy_bolt": {
+   "file": "assets/animation/projectiles/energy_bolt.png",
+   "file_512": "assets/animation/projectiles/energy_bolt-512.png",
+   "orientation": "nose-up"
+  },
+  "flame": {
+   "file": "assets/animation/projectiles/flame.png",
+   "file_512": "assets/animation/projectiles/flame-512.png",
+   "orientation": "nose-up"
+  }
+ },
+ "canopy": {
+  "canopy_single": {
+   "file": "assets/animation/canopy/canopy_single.png",
+   "file_512": "assets/animation/canopy/canopy_single-512.png"
+  },
+  "canopy_dense": {
+   "file": "assets/animation/canopy/canopy_dense.png",
+   "file_512": "assets/animation/canopy/canopy_dense-512.png"
+  },
+  "canopy_edge_n": {
+   "file": "assets/animation/canopy/canopy_edge_n.png",
+   "file_512": "assets/animation/canopy/canopy_edge_n-512.png"
+  },
+  "canopy_edge_s": {
+   "file": "assets/animation/canopy/canopy_edge_s.png",
+   "file_512": "assets/animation/canopy/canopy_edge_s-512.png"
+  },
+  "canopy_edge_e": {
+   "file": "assets/animation/canopy/canopy_edge_e.png",
+   "file_512": "assets/animation/canopy/canopy_edge_e-512.png"
+  },
+  "canopy_edge_w": {
+   "file": "assets/animation/canopy/canopy_edge_w.png",
+   "file_512": "assets/animation/canopy/canopy_edge_w-512.png"
+  }
+ },
+ "notes": [
+  "Wrecks are team-neutral visual-only scrap; no economy code in this pass.",
+  "Canopy edge tiles: foliage flush to the named edge only, opposite half transparent (verified numerically).",
+  "All -512 copies are exactly 512x512 RGBA with transparent corners (verified)."
+ ]
+}

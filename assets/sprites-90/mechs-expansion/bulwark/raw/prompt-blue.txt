@@ -1,0 +1,1 @@
+Blue grid prompt: 4x2 grid, pure black background, strict flat 90-degree top-down plan view, heavy armoured frontline mechs, industrial scrap-steel style, blue team markings (large blue centre ring/disc + blue lights), barrels straight up only, no text, no bleed. Row1: rampart_mk2, bastion, ironclad, goliath. Row2: gatekeeper, redoubt, breakwater, dreadnought.
